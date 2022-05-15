@@ -1,0 +1,16 @@
+:root{
+    /* Palette Colors*/
+    --color1: ;
+    --color2: ;
+    --color3: ;
+    /* Colors Defined */
+    --background-color: white;
+    --header1-color: ;
+    --header2-color: ;
+    --text-color: black;
+    --add-button-color: rgb(124, 201, 124);
+    --edit-button-color: rgb(245, 245, 103);
+    --delete-button-color: rgb(240, 70, 70);
+    --like-button-color: rgb(200, 100, 200);
+    --comment-button-color: rgb(255, 179, 37);
+}
