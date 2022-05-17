@@ -14,14 +14,14 @@ app.use(methodOverride("_method"));
 
 // Homepage route
 app.get("/", (req, res) => {
-  res.send("<h1>Hello World!</h1>");
+  // res.send("<h1>Hello World!</h1>");
+  res.render('home');
 });
-
-// Need to require controllers and routes
 
 // Wildcard Error Page
 app.get("*", (req, res) => {
-  res.send(`<h1>404 Page, Oops, this page doesn't exist</h1>`);
+  // res.send(`<h1>404 Page, Oops, this page doesn't exist</h1>`);
+  res.render('error404');
 });
 
 // Listens for connections. Confirgured for PORT 3500
