@@ -14,3 +14,64 @@
     --like-button-color: rgb(200, 100, 200);
     --comment-button-color: rgb(255, 179, 37);
 }
+
+main {
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: white;
+}
+  
+/* nav bar */
+nav ul{
+text-align: left;
+margin-left: 25px;
+}
+
+.form-inline button{
+text-align: right;
+}
+
+/* home page */
+#home-image{
+height: auto;
+}
+
+/* content */
+/* h1 {
+text-align: center;
+color: cornflowerblue;
+}
+
+h2 {
+color: lightblue;
+} */
+
+img{
+width: 100%;
+height: 30em;
+}
+
+/* buttons */
+.btn-primary{
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.btn-primary:hover{
+background-color: lightblue;
+}
+.btn-warning{
+margin-right: 20px;
+}
+
+/* forms */
+form {
+display: inline;
+}
+
+.inactive {
+color: gray;
+}
+
+.border {
+border: 1px solid gray;
+}
