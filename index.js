@@ -12,6 +12,8 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 
+app.use('/adoption', require('./controllers/adoption'))
+
 // Homepage route
 app.get("/", (req, res) => {
   // res.send("<h1>Hello World!</h1>");

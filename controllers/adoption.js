@@ -1,12 +1,14 @@
 const router = require('express').Router();
-const db = require('../models');
+const db = require('../models/Collections/collections');
 
 //Controllers routes for Services
 //GET route pet adoption
 
 
 //GET add pet adoption
-
+router.get ('/newpet', (req, res) => {
+    res.render('adoption/new')
+})
 
 //POST add pet adoption
 
@@ -21,3 +23,5 @@ const db = require('../models');
 
 
 //DELETE pet adoption
+
+module.exports = router
