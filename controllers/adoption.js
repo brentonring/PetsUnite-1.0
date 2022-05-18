@@ -6,7 +6,7 @@ const db = require('../models/Collections/collections');
 
 
 //GET add pet adoption
-router.get ('/newpet', (req, res) => {
+router.get ('/new', (req, res) => {
     res.render('adoption/new')
 })
 
