@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const db = require('../models');
+const db = require('../models/Collections/collections');
 
 //Controllers routes for Services
 //GET route events
@@ -12,6 +12,10 @@ const db = require('../models');
 
 
 //GET show events
+router.get('/show', (req, res) => {
+    res.send("GET events/show")
+    // res.render('events/show')
+})
 
 
 //GET edit events

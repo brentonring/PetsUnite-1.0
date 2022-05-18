@@ -8,3 +8,4 @@ const adoptionSchema = new mongoose.Schema({
 })
 
 module.exports = mongoose.model('Adoption', adoptionSchema);
+
