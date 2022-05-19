@@ -6,7 +6,9 @@ const db = require('../models/Collections/collections');
 
 
 //GET add events
-
+router.get ('/new', (req, res) => {
+    res.render('events/new')
+})
 
 //POST add events
 

@@ -12,7 +12,7 @@ function showPet (data) {
                 <h3>I'm Available</h3>
                 {/* <p>Type: {[data.pet.type]}</p>
                 <p>Breed: {[data.pet.breed]}</p>
-                <p>Gender: {[date.pet.gender]}</p>
+                <p>Gender: {[data.pet.gender]}</p>
                 <p>Age: {[data.pet.age]}</p>
                 <p>Health history: {[data.pet.health]}</p>
                 // ADD some favicons next to the <p> tags above???

@@ -12,9 +12,9 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 
-app.use('/adoption', require('./controllers/adoption'))
-// app.use('/events', require('./controllers/events'))
-// app.use('/services', require('./controllers/services'))
+app.use('/adoption', require('./controllers/adoption'));
+// app.use('/events', require('./controllers/events'));
+// app.use('/services', require('./controllers/services'));
 // Need help connecting app.use for events and services controller here ???
 
 // Homepage route
