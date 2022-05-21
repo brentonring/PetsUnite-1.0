@@ -27,7 +27,9 @@ function newPet () {
                         <label htmlFor='pic'>Pet Picture</label>
                         <input className='form-control' id='pic' name='pic'/>
                     </div>
-                    <input className='btn btn-primary' type='submit' value='Add Pet' />
+                    <div className='text-center'>
+                        <input className='btn btn-primary' type='submit' value='Add Pet' />
+                    </div>       
                 </form>
             </main>
         </Def>

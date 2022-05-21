@@ -50,3 +50,12 @@ db_event.create ([
     pic: "https://pixabay.com/photos/cat-friendship-animals-pet-1148305/"
   }
 ])
+
+.then(() => {
+  console.log('Success!');
+  process.exit();
+})
+.catch(err => {
+  console.log("Fail!", err);
+  process.exit();
+})
