@@ -20,8 +20,11 @@ function indexAdoption (data) {
                         <img id="icons" src="/images/icons/icon_bday32.png"></img>{pet.age} {pet.age_unit}
                     </li>
                 </ul>
-                <button type="submit" className="btn btn-danger text-center mx-auto d-block">Like</button>
-
+                <div className='text-center mx-auto d-block'>
+                    <button type="submit" className="btn btn-danger mx-3 my-1"><img id="icons" className='text-center mx-auto d-block' src='/images/icons/icon_lightgreen_heart32.png'></img></button>
+                    <button type="submit" className="btn btn-success mx-3 my-1"><img id="icons" className='text-center mx-auto d-block' src='/images/icons/icon_lightgreen_comment32.png'></img></button>
+                </div>
+                
             </div>
             
         )
@@ -30,9 +33,11 @@ function indexAdoption (data) {
         <Def>
             <main>
                 <h1>Adopt a Pet!</h1>
-                <form method="GET" action="/adoption/new">
-                    <input className='btn btn-primary' type="submit" value="Add a Pet"></input>
-                </form>
+                <div className='text-center'>
+                    <form method="GET" action="/adoption/new">
+                        <input className='btn btn-primary' type="submit" value="Add a Pet"></input>
+                    </form> 
+                </div>
                 <div className="row g-0">
                     {petsFormatted}
                 </div>

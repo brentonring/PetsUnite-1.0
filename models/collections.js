@@ -19,7 +19,27 @@ module.exports = [
     age_unit: "years", //string
     health_history: "deaf",
     pic: "https://cdn.pixabay.com/photo/2019/12/22/17/13/french-bulldog-4713013_960_720.jpg"
-  }];
+  },{
+    animal_type: "dog",
+    breed: "Golden Retreiver",
+    color: "light golden",
+    gender: "male",
+    name: "Walter",
+    age: 9,
+    age_unit: "weeks", 
+    health_history: "none",
+    pic: "https://cdn.pixabay.com/photo/2016/02/18/18/37/puppy-1207816_960_720.jpg"
+  },{
+    animal_type: "dog",
+    breed: "Golden Retreiver",
+    color: "golden",
+    gender: "male",
+    name: "Jesse",
+    age: 9,
+    age_unit: "weeks",
+    health_history: "none",
+    pic: "https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036_960_720.jpg"
+  },];
 
 //Alissa-->Katie I had to comment the below part out to test the index page as it was picking up on the schemas 
 //and wasn't loading the tester date above. When you work on the data below, you uncomment it.
