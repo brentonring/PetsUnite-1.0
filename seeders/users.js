@@ -1,3 +1,6 @@
+//use validation, authenitcation for username and password-- may need to do more research
+//katie to update to be liek events.js
+
 let usersCollection = [
     {
       first_name: "Lance",

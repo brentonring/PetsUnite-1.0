@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const db = require('../models');
+const db_service = require('../models/collections');
 
 //Controllers routes for Services
 //GET route services
