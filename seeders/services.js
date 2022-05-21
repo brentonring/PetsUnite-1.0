@@ -1,3 +1,6 @@
+//katie update this to look like events.js
+//update age to number not string change to age_unit to classify the year/month/day
+
 let servicesCollection = [
     {
       service: "feeding",
@@ -5,7 +8,8 @@ let servicesCollection = [
       breed: "Corn Snake",
       gender: "male",
       name: "Draco",
-      age: "3 years",
+      age: 3 , //number
+      age_unit: "years", //string
       health_history: "none",
       pic: "https://pixabay.com/photos/corn-snake-choke-snake-terraristik-3248897/"
     },{

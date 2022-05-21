@@ -1,12 +1,11 @@
 :root{
     /* Palette Colors*/
-    --color1: ;
-    --color2: ;
-    --color3: ;
-    /* Colors Defined */
+    --palette-brown: #483425;
+    --palette-teal: #00C9AC;
+    --palette-light-teal: #C3FCF1;
+    --palette-dark-green: #4C8077;
+    /* Other Colors Defined */
     --background-color: white;
-    --header1-color: ;
-    --header2-color: ;
     --text-color: black;
     --add-button-color: rgb(124, 201, 124);
     --edit-button-color: rgb(245, 245, 103);
@@ -37,14 +36,18 @@ height: auto;
 }
 
 /* content */
-/* h1 {
+h1 {
 text-align: center;
-color: cornflowerblue;
+color: var(--palette-brown);
 }
 
 h2 {
-color: lightblue;
-} */
+color: var(--palette-teal);
+}
+
+p{
+    color: var(--text-color);
+}
 
 img{
 width: 100%;

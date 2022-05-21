@@ -7,4 +7,7 @@ mongoose.connect(mongooseURI, {useNewUrlParser: true, useUnifiedTopology: true},
     () => {console.log('connected to mongo: ', mongooseURI)}
 )
 
-module.exports.Place = require('./collections');
+module.exports.Adoption = require('./collections');
+module.exports.Event = require('./collections');
+module.exports.Service = require('./collections');
+module.exports.User = require('./collections');
