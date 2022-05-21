@@ -1,3 +1,4 @@
+/* ROOT COLORS */
 :root{
     /* Palette Colors*/
     --palette-brown: #483425;
@@ -14,40 +15,7 @@
     --comment-button-color: rgb(255, 179, 37);
 }
 
-main {
-    margin-right: 20px;
-    margin-left: 20px;
-    background-color: white;
-}
-  
-/* nav bar */
-nav ul{
-text-align: left;
-
-}
-#logo-img{
-    width: auto;
-    height: auto;
-    margin-left: 10px;
-}
-.login-container{
-    float: right;
-}
-
-/* nav li{
-    justify-content: center;
-} */
-/* #nav-buttons{
-    float: right;
-}
-#nav-button{
-    float: right;
-} */
-.form-inline button{
-    text-align: right;
-}
-
-/* home page */
+/* HOME PAGE */
 body{
     /* height: auto; */
     background-image: url("/images/krista-mangulsone-9gz3wfHr65U-unsplash.jpg");
@@ -76,49 +44,88 @@ main{
     padding: 30px;
 }
 
-/* general content */
+/* NAV BAR */
+nav ul{
+    text-align: left;
+}
+#logo-img{
+    width: auto;
+    height: auto;
+    margin-left: 10px;
+}
+.login-container{
+    float: right;
+}
+/* nav li{
+    justify-content: center;
+} */
+/* #nav-buttons{
+    float: right;
+}
+#nav-button{
+    float: right;
+} */
+.form-inline button{
+    text-align: right;
+}
+
+/* GENERAL MAIN CONTENT */
+main {
+    margin-right: 20px;
+    margin-left: 20px;
+    /* background-color: white; */
+}
+#main-container{
+    background-color: white;
+    border-radius: 2%;
+}
 h1 {
     text-align: center;
     color: var(--palette-brown);
     margin-top: 20px;
+    /* background-color: var(--palette-light-teal);
+    width: 40%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px; */
 }
-
 h2 {
     color: var(--palette-teal);
 }
-
 h2 a{
     color: var(--palette-teal);
 }
-
 h2 a:hover{
     color: var(--palette-brown);
 }
-
 p{
     color: var(--text-color);
 }
 
+/* CARD CONTENT */
 img{
     width: 80%;
     height: auto;
    
 }
-.col-sm-4{
-    border: 1px solid var(--palette-brown);
+#card{
+    border: 1px solid lightgray;
     border-radius: 2%;
     /* background-color: var(--palette-light-teal); */
 }
-
+#card-content{
+    padding-bottom: 0px;
+}
 #icons{
     width: 32px;
     height: 32px;
     margin-right: 10px;
-    /* border: 1px solid black;
-    border-radius: 100%; */
+}
+#card-content-buttons{
+    padding-bottom: 10px;
 }
 
-/* buttons */
+/* BUTTONS */
 .btn-primary{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -139,15 +146,19 @@ img{
     margin-right: 20px;
 }
 
-/* forms */
+/* FORMS */
 form {
     display: inline;
 }
-
 .inactive {
     color: gray;
 }
-
 .border {
     border: 1px solid gray;
+}
+footer{
+    background-color: #f1f1f1;
+}
+#copyright{
+    background-color:rgba(0, 0, 0, 0.2);
 }

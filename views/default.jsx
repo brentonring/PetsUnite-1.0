@@ -56,9 +56,34 @@ function Def (html) {
                     </div>
                 </div>
             </nav>
-                <div className = "container">
-                    {html.children}
+            <div className = "container">
+                {html.children}
+            </div>
+            <footer className="text-center text-white">
+                {/* <!-- Grid container --> */}
+                <div className="container pt-4">
+                    {/* <!-- Section: Social media --> */}
+                    <section className="mb-4">
+                        {/* <!-- Facebook --> */}
+                        <a className="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i className="fab fa-facebook-f"></i></a>
+                        {/* <!-- Twitter --> */}
+                        <a className="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i className="fab fa-twitter"></i></a>
+                        {/* <!-- Google --> */}
+                        <a className="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i className="fab fa-google"></i></a>
+                        {/* <!-- Instagram --> */}
+                        <a className="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i className="fab fa-instagram"></i></a>
+                        {/* <!-- Linkedin --> */}
+                        <a className="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i className="fab fa-linkedin"></i></a>
+                        {/* <!-- Github --> */}
+                        <a className="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i className="fab fa-github"></i></a>
+                    </section>
                 </div>
+                {/* <!-- Copyright --> */}
+                <div id="copyright" className="text-center text-dark p-3">
+                    © 2022 Copyright:
+                    <a className="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                </div>
+            </footer>
                 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossOrigin="anonymous"></script>
                 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossOrigin="anonymous"></script>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossOrigin="anonymous"></script>
