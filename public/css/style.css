@@ -30,6 +30,9 @@ text-align: left;
     height: auto;
     margin-left: 10px;
 }
+.login-container{
+    float: right;
+}
 
 /* nav li{
     justify-content: center;
@@ -101,12 +104,12 @@ img{
     height: auto;
    
 }
-.col-sm-6{
-    border: 2px solid var(--palette-brown);
+.col-sm-4{
+    border: 1px solid var(--palette-brown);
     border-radius: 2%;
-    
     /* background-color: var(--palette-light-teal); */
 }
+
 #icons{
     width: 32px;
     height: 32px;
