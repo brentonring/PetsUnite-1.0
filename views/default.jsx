@@ -40,18 +40,20 @@ function Def (html) {
                             <a className="nav-link" href="/events">Events</a>
                         </li>
                     </ul>
-                    <ul className="navbar-nav ml-auto mt-2 mt-lg-0"  id="nav-buttons">
-                        <li className="nav-item" id="nav-button">
-                            <form className="form-inline" method="GET" action={`/login`}>
-                                <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
-                            </form>
-                        </li>
-                        <li className="nav-item" id="nav-button">
-                            <form className="form-inline" method="GET" action={`/register`}>
-                                <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Register</button>
-                            </form>
-                        </li>
-                    </ul>
+                    <div className='login-container'>
+                        <ul className="navbar-nav ml-auto mt-2 mt-lg-0"  id="nav-buttons">
+                            <li className="nav-item" id="nav-button">
+                                <form className="form-inline" method="GET" action={`/login`}>
+                                    <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+                                </form>
+                            </li>
+                            <li className="nav-item" id="nav-button">
+                                <form className="form-inline" method="GET" action={`/register`}>
+                                    <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Register</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
                 <div className = "container">
