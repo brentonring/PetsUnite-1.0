@@ -1,3 +1,6 @@
+//katie update this to look like events.js
+//update age to number not string change to age_unit to classify the year/month/day
+
 let adoptionCollection = [
     {
       animal_type: "dog",
@@ -5,7 +8,8 @@ let adoptionCollection = [
       color: "yellow",
       gender: "female",
       name: "Lucille",
-      age: "2 years",
+      age: 2, //number
+      age_unit: "years", //string
       health_history: "none",
       pic: "https://pixabay.com/photos/dog-nose-yellow-lab-labrador-loyal-1579614/"
     },{

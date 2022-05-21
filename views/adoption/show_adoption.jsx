@@ -29,4 +29,4 @@ function showPet (data) {
 }
 
 
-module.exports = showPet
+module.exports = showPet;

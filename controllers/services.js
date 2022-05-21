@@ -1,9 +1,21 @@
 const router = require('express').Router();
-const db = require('../models');
+const services = require('../models/collections');
+// const db_service = require('../models/collections');
 
 //Controllers routes for Services
 //GET route services
-
+router.get('/', (req, res) => {
+    res.render('services/index_services', {services});
+    // res.send('GET /services stub')
+    // db.Service.find()
+    //   .then(services => {
+    //     res.render('services/index_services', {services});
+    //   })
+    //   .catch(err => {
+    //     console.log('err', err);
+    //     res.render('error404');
+    //   })
+})
 
 //GET add service
 
