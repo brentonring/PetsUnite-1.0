@@ -21,3 +21,5 @@ const db = require('../models');
 
 
 //DELETE service
+
+module.exports = router

@@ -21,7 +21,9 @@ router.get('/show', (req, res) => {
 // I used Postman to check route above. It's good as is. Once we connect data on Mongoose, I will include the commented sections.
 
 //GET edit pet adoption
-
+router.get('/:id/edit', (req, res) => {
+    res.send('GET edit form stub')
+})
 
 //PUT edit pet adoption
 

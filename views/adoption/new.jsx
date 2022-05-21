@@ -5,7 +5,7 @@ function newPet () {
     return (
         <Def>
             <main>
-                <h1>Unite a Pet with a Loving Owner</h1>
+                <h1 style={{textAlign: 'center'}}>Unite a Pet with a Loving Owner</h1>
                 <form method='POST' action='/adoption'>
                     <div className='form-group col-sm-6'>
                         <label htmlFor='name'>Pet Name</label>
@@ -41,7 +41,7 @@ function newPet () {
                     </div>
                     <div className='form-group col-sm-4'>
                         <label htmlFor='age'>Age</label>
-                        <input className='form-control' id='age' name='age'/>
+                        <input className='form-control' id='age' name='age'/> {/* change to number for age then dropdown for months/years */}
                     </div>
                     <div className='form-group col-sm-4'>
                         <label htmlFor='health_history'>Health History</label>

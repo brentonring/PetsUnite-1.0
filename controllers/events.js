@@ -27,3 +27,5 @@ router.get('/show', (req, res) => {
 
 
 //DELETE events
+
+module.exports = router
