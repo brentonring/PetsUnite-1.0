@@ -1,20 +1,20 @@
 const router = require('express').Router();
-const pets = require('../models/collections');
-// const db_adoption = require('../models/collections');
+// const pets = require('../models/collections');
+const db = require('../models/adoption');
 
 //Controllers routes for Adoption
 //GET route pet adoption
 router.get('/', (req, res) => {
-    res.render('adoption/index_adoption', {pets});
+    // res.render('adoption/index_adoption', {pets});
     // res.send('GET /adoption stub')
-    // db.Adoption.find()
-    //   .then(pets => {
-    //     res.render('adoption/index_adoption', {pets});
-    //   })
-    //   .catch(err => {
-    //     console.log('err', err);
-    //     res.render('error404');
-    //   })
+    db.Adoption.find()
+      .then(pet => {
+        res.render('adoption/index_adoption', {pet});
+      })
+      .catch(err => {
+        console.log('err', err);
+        res.render('error404');
+      })
 })
 
 //GET add pet adoption
