@@ -20,7 +20,7 @@ router.get('/', (req, res) => {
 
 //GET add events
 router.get ('/new', (req, res) => {
-    res.render('events/new')
+    res.render('events/new_events')
 })
 
 //POST add events

@@ -149,14 +149,10 @@ form {
 }
 
 .border {
-<<<<<<< HEAD
 border: 1px solid gray;
 }
 
 .form-group {
     display: inline-block;
     padding: 1em;
-=======
-    border: 1px solid gray;
->>>>>>> 58a74a7285f61393fead291d5159108e9ee04b23
 }

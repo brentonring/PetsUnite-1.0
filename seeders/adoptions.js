@@ -1,15 +1,14 @@
-//katie update this to look like events.js
-//update age to number not string change to age_unit to classify the year/month/day
+const db_adoption = require('../models/collections')
 
-let adoptionCollection = [
+db_adoption.create = [
     {
       animal_type: "dog",
       breed: "Labrador Retreiver",
       color: "yellow",
       gender: "female",
       name: "Lucille",
-      age: 2, //number
-      age_unit: "years", //string
+      age: 2, 
+      age_unit: "years", 
       health_history: "none",
       pic: "https://pixabay.com/photos/dog-nose-yellow-lab-labrador-loyal-1579614/"
     },{
@@ -18,7 +17,8 @@ let adoptionCollection = [
       color: "fawn",
       gender: "female",
       name: "Maude",
-      age: "5 years",
+      age: 5,
+      age_unit: "years",
       health_history: "deaf",
       pic: "https://pixabay.com/photos/french-bulldog-dog-pet-canine-4713013/"
     },{
@@ -27,7 +27,8 @@ let adoptionCollection = [
       color: "light golden",
       gender: "male",
       name: "Walter",
-      age: "9 weeks",
+      age: 2,
+      age_unit: "months",
       health_history: "none",
       pic: "https://pixabay.com/photos/puppy-golden-retriever-dog-young-1207816/"
     },{
@@ -36,7 +37,8 @@ let adoptionCollection = [
       color: "golden",
       gender: "male",
       name: "Jesse",
-      age: "9 weeks",
+      age: 2,
+      age_unit: "months",
       health_history: "none",
       pic: "https://pixabay.com/photos/dog-puppy-golden-retriever-breed-4372036/"
     },{
@@ -45,7 +47,8 @@ let adoptionCollection = [
       color: "black/tan",
       gender: "male",
       name: "Hotdog",
-      age: "12 weeks",
+      age: 3,
+      age_unit: "months",
       health_history: "mild skin condition",
       pic: "https://pixabay.com/photos/dachshund-puppy-pet-canine-animal-1519374/"
     },{
@@ -54,7 +57,8 @@ let adoptionCollection = [
       color: "tan",
       gender: "male",
       name: "Toothless",
-      age: "4 years",
+      age: 4,
+      age_unit: "years",
       health_history: "missing some teeth",
       pic: "https://pixabay.com/photos/bearded-dragon-pet-lizard-dragon-4052825/"
     }
