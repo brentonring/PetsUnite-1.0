@@ -4,7 +4,7 @@ const db_event = require('../models/collections')
 db_event.create ([
   {
     event_name: "Doggie Play Date",
-    date: "06/11/22",
+    date: "06/11/2022",
     start_time: "11:00am",
     end_time: "12:30pm",
     location: "Dorothea Dix Dog Park",
@@ -14,7 +14,7 @@ db_event.create ([
     pic: "https://pixabay.com/photos/bordeaux-mastiff-grass-running-7170006/"
   },{
     event_name: "Keeping Chickens in the City",
-    date: "Saturday, June 18th, 2022",
+    date: "06/18/2022",
     start_time: "1:00pm",
     end_time: "3:00pm",
     location: "The Urban Chicken",
@@ -24,7 +24,7 @@ db_event.create ([
     pic: "https://pixabay.com/photos/chicks-chickens-brooder-farm-5147119/"
   },{
     event_name: "So you Want a Guinea Pig",
-    date: "Saturday, June 18th, 2022",
+    date: "06/18/2022",
     start_time: "3:00pm",
     end_time: "4:00pm",
     location: "Petco",
@@ -44,7 +44,7 @@ db_event.create ([
     pic: "https://pixabay.com/photos/bird-birdie-cockatiel-colorful-bird-2603450/"
   },{
     event_name: "What to Feed your Pet Snake",
-    date: "Saturday, June 25th, 2022",
+    date: "06/25/2022",
     start_time: "3:00pm",
     end_time: "4:00pm",
     location: "Petco",
@@ -54,7 +54,7 @@ db_event.create ([
     pic: "https://pixabay.com/photos/snake-reptile-animal-rosy-pet-5424165/"
   },{
     event_name: "Cat Massage",
-    date: "Sunday, June 26th, 2022",
+    date: "06/26/2022",
     start_time: "11:00am",
     end_time: "1:00pm",
     location: "Purr Cup Cafe",

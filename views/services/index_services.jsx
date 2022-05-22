@@ -27,8 +27,8 @@ function indexServices (data) {
         <Def>
             <main>
                 <h1>Go to a Pet Event!</h1>
-                <form method="GET" action="/events/new">
-                    <input className='btn btn-primary' type="submit" value="Add an Event"></input>
+                <form method="GET" action="/services/new">
+                    <input className='btn btn-primary' type="submit" value="Add a Service"></input>
                 </form>
                 <div className="row g-0">
                     {eventsFormatted}
@@ -38,4 +38,4 @@ function indexServices (data) {
     )
 };
 
-module.exports = indexEvents;
+module.exports = indexServices;
