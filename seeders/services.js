@@ -10,7 +10,7 @@ db_service.create = [
       age: 3 , //number
       age_unit: "years", //string
       health_history: "none",
-      pic: "https://pixabay.com/photos/corn-snake-choke-snake-terraristik-3248897/"
+      pic: "https://cdn.pixabay.com/photo/2018/03/22/00/43/corn-snake-3248897_1280.jpg"
     },{
       service: "walking",
       animal_type: "dog",
