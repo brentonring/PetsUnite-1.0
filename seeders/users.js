@@ -1,7 +1,6 @@
-//use validation, authenitcation for username and password-- may need to do more research
-//katie to update to be liek events.js
+const db_user = require('../models/collections')
 
-let usersCollection = [
+db_user.create = [
     {
       first_name: "Lance",
       last_name: "Weston",
