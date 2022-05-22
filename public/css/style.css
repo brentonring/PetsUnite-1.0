@@ -17,15 +17,31 @@
 
 /* HOME PAGE */
 body{
-    /* height: auto; */
     background-image: url("/images/krista-mangulsone-9gz3wfHr65U-unsplash.jpg");
     background-color: #4C8077;
     background-repeat: no-repeat;
     background-size: 100%;
 }
-#home-main{
-    background-color: transparent;
+/* #intro {
+    background-image: url("/images/krista-mangulsone-9gz3wfHr65U-unsplash.jpg");
+    height: 100vh;
+  }
+@media (min-width: 992px) {
+    #intro {
+        margin-top: -58.59px;
+    }
 }
+.mask{
+    background-color: rgba(0, 0, 0, 0.8);
+} */
+/* #home-main{
+    height: 100vh;
+    width: 100%;
+    background-image: url("/images/krista-mangulsone-9gz3wfHr65U-unsplash.jpg");
+    background-color: #4C8077;
+    background-repeat: no-repeat;
+    background-size: 100%;
+} */
 main{
     border-radius: 2%;
 }
@@ -52,9 +68,6 @@ nav ul{
     width: auto;
     height: auto;
     margin-left: 10px;
-}
-.login-container{
-    float: right;
 }
 /* nav li{
     justify-content: center;
@@ -104,14 +117,17 @@ p{
 
 /* CARD CONTENT */
 img{
-    width: 80%;
-    height: auto;
-   
+    /* width: 80%; */
+    width: 100%;
+    height: auto;  
 }
 #card{
     border: 1px solid lightgray;
     border-radius: 2%;
-    /* background-color: var(--palette-light-teal); */
+}
+#card:hover{
+    background-color: var(--palette-light-teal);
+    /* transform: scale(1.1); */
 }
 #card-content{
     padding-bottom: 0px;
@@ -145,6 +161,12 @@ img{
 .btn-warning{
     margin-right: 20px;
 }
+.btn-danger:hover{
+    transform: scale(1.2);
+}
+.btn-success:hover{
+    transform: scale(1.2);
+}
 
 /* FORMS */
 form {
@@ -157,6 +179,7 @@ form {
     border: 1px solid gray;
 }
 footer{
+    margin-top: 50px;
     background-color: #f1f1f1;
 }
 #copyright{

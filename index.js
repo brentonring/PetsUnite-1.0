@@ -12,6 +12,7 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 
+
 //routes
 app.use('/adoption', require('./controllers/adoption'))
 // app.use('/events', require('./controllers/events'))
