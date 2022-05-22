@@ -1,4 +1,3 @@
-/* ROOT COLORS */
 :root{
     /* Palette Colors*/
     --palette-brown: #483425;
@@ -15,33 +14,50 @@
     --comment-button-color: rgb(255, 179, 37);
 }
 
-/* HOME PAGE */
+main {
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: white;
+}
+  
+/* nav bar */
+nav ul{
+text-align: left;
+
+}
+#logo-img{
+    width: auto;
+    height: auto;
+    margin-left: 10px;
+}
+.login-container{
+    float: right;
+}
+
+/* nav li{
+    justify-content: center;
+} */
+/* #nav-buttons{
+    float: right;
+}
+#nav-button{
+    float: right;
+} */
+.form-inline button{
+    text-align: right;
+}
+
+/* home page */
 body{
+    /* height: auto; */
     background-image: url("/images/krista-mangulsone-9gz3wfHr65U-unsplash.jpg");
     background-color: #4C8077;
     background-repeat: no-repeat;
     background-size: 100%;
 }
-/* #intro {
-    background-image: url("/images/krista-mangulsone-9gz3wfHr65U-unsplash.jpg");
-    height: 100vh;
-  }
-@media (min-width: 992px) {
-    #intro {
-        margin-top: -58.59px;
-    }
+#home-main{
+    background-color: transparent;
 }
-.mask{
-    background-color: rgba(0, 0, 0, 0.8);
-} */
-/* #home-main{
-    height: 100vh;
-    width: 100%;
-    background-image: url("/images/krista-mangulsone-9gz3wfHr65U-unsplash.jpg");
-    background-color: #4C8077;
-    background-repeat: no-repeat;
-    background-size: 100%;
-} */
 main{
     border-radius: 2%;
 }
@@ -60,88 +76,49 @@ main{
     padding: 30px;
 }
 
-/* NAV BAR */
-nav ul{
-    text-align: left;
-}
-#logo-img{
-    width: auto;
-    height: auto;
-    margin-left: 10px;
-}
-/* nav li{
-    justify-content: center;
-} */
-/* #nav-buttons{
-    float: right;
-}
-#nav-button{
-    float: right;
-} */
-.form-inline button{
-    text-align: right;
-}
-
-/* GENERAL MAIN CONTENT */
-main {
-    margin-right: 20px;
-    margin-left: 20px;
-    /* background-color: white; */
-}
-#main-container{
-    background-color: white;
-    border-radius: 2%;
-}
+/* general content */
 h1 {
     text-align: center;
     color: var(--palette-brown);
     margin-top: 20px;
-    /* background-color: var(--palette-light-teal);
-    width: 40%;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px; */
 }
+
 h2 {
     color: var(--palette-teal);
 }
+
 h2 a{
     color: var(--palette-teal);
 }
+
 h2 a:hover{
     color: var(--palette-brown);
 }
+
 p{
     color: var(--text-color);
 }
 
-/* CARD CONTENT */
 img{
-    /* width: 80%; */
-    width: 100%;
-    height: auto;  
+    width: 80%;
+    height: auto;
+   
 }
-#card{
-    border: 1px solid lightgray;
+.col-sm-4{
+    border: 1px solid var(--palette-brown);
     border-radius: 2%;
+    /* background-color: var(--palette-light-teal); */
 }
-#card:hover{
-    background-color: var(--palette-light-teal);
-    /* transform: scale(1.1); */
-}
-#card-content{
-    padding-bottom: 0px;
-}
+
 #icons{
     width: 32px;
     height: 32px;
     margin-right: 10px;
-}
-#card-content-buttons{
-    padding-bottom: 10px;
+    /* border: 1px solid black;
+    border-radius: 100%; */
 }
 
-/* BUTTONS */
+/* buttons */
 .btn-primary{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -161,27 +138,21 @@ img{
 .btn-warning{
     margin-right: 20px;
 }
-.btn-danger:hover{
-    transform: scale(1.2);
-}
-.btn-success:hover{
-    transform: scale(1.2);
-}
 
-/* FORMS */
+/* forms */
 form {
     display: inline;
 }
+
 .inactive {
     color: gray;
 }
+
 .border {
-    border: 1px solid gray;
+border: 1px solid gray;
 }
-footer{
-    margin-top: 50px;
-    background-color: #f1f1f1;
-}
-#copyright{
-    background-color:rgba(0, 0, 0, 0.2);
+
+.form-group {
+    display: inline-block;
+    padding: 1em;
 }

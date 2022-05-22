@@ -43,7 +43,7 @@ router.get('/:id', (req, res) => {
     //     res.render('adoption/show_adoption', {pet: pets[id], id})
     // }
     //mongo code
-    // db.Adoption.findById(req.params.id)
+    // db_adoption.Adoption.findById(req.params.id)
     // .then(pets => {
     //   res.render('adoption/show_adoption', {pets});
     // })

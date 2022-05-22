@@ -19,7 +19,9 @@ router.get('/', (req, res) => {
 
 
 //GET add events
-
+router.get ('/new', (req, res) => {
+    res.render('events/new_events')
+})
 
 //POST add events
 
@@ -38,3 +40,5 @@ router.get('/show', (req, res) => {
 
 
 //DELETE events
+
+module.exports = router
