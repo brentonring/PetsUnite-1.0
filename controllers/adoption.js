@@ -55,10 +55,6 @@ router.get('/:id', (req, res) => {
 
 //GET edit pet adoption
 router.get('/:id/edit', (req, res) => {
-<<<<<<< HEAD
-    res.send('GET edit form stub')
-})
-=======
     // let id = Number(req.params.id);
     // if(isNaN(id)){
     //   res.render('error404')
@@ -78,7 +74,6 @@ router.get('/:id/edit', (req, res) => {
     //     res.render('error404')
     //   })
   })
->>>>>>> 58a74a7285f61393fead291d5159108e9ee04b23
 
 //PUT edit pet adoption
 router.put('/:id', (req, res) =>{
