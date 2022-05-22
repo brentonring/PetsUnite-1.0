@@ -1,3 +1,6 @@
+// Alissa, I commented out my updated code but it should be how we wanted it as of Friday evening.
+//I left your filler code as is.
+
 module.exports = [
   {
     animal_type: "dog",
@@ -41,12 +44,20 @@ module.exports = [
     pic: "https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036_960_720.jpg"
   },];
 
-//Alissa-->Katie I had to comment the below part out to test the index page as it was picking up on the schemas 
-//and wasn't loading the tester date above. When you work on the data below, you uncomment it.
-
 // const mongoose = require('mongoose');
 
 // ///katie to update this page
+// //user schema
+// const userSchema = new mongoose.Schema({
+//   first_name: { type: String, required: true},
+//   last_name: { type: String, required: true},
+//   email: { type: String, required: true},
+//   username: { type: String, required: true},
+//   password: { type: String, required: true},
+  
+// })
+// module.exports = mongoose.model('User', userSchema);
+
 // //adoption pets
 // const adoptionSchema = new mongoose.Schema({
 //   animal_type: { type: String, required: true},
@@ -55,21 +66,23 @@ module.exports = [
 //   gender: String,
 //   name: String,
 //   age: Number,
+//   age_unit: String,
 //   health_history: String,
-//   pic: {type: String, default: 'http://placekitten.com/200/200'},
+//   pic: {type: String, default: 'http://placekitten.com/200/200'}
   
 // })
 // module.exports = mongoose.model('Adoption', adoptionSchema);
 
 // //events schema
 // const eventSchema = new mongoose.Schema({
-//   animal_type: { type: String, required: true},
-//   breed: String,
-//   color: String,
-//   gender: String,
-//   name: String,
-//   age: Number,
-//   health_history: String,
+//   event_name: { type: String, required: true},
+//   date: String,
+//   start_time: String,
+//   end_time: String,
+//   location: String,
+//   address: String,
+//   city: String,
+//   state: String,
 //   pic: {type: String, default: 'http://placekitten.com/200/200'},
   
 // })
@@ -77,30 +90,15 @@ module.exports = [
 
 // //services schema
 // const serviceSchema = new mongoose.Schema({
-//   animal_type: { type: String, required: true},
+//   service: { type: String, required: true},
+//   animal_type: String,
 //   breed: String,
-//   color: String,
 //   gender: String,
 //   name: String,
 //   age: Number,
+//   age_unit: String,
 //   health_history: String,
 //   pic: {type: String, default: 'http://placekitten.com/200/200'},
   
 // })
 // module.exports = mongoose.model('Service', serviceSchema);
-
-// //user schema
-// const userSchema = new mongoose.Schema({
-//   animal_type: { type: String, required: true},
-//   breed: String,
-//   color: String,
-//   gender: String,
-//   name: String,
-//   age: Number,
-//   health_history: String,
-//   pic: {type: String, default: 'http://placekitten.com/200/200'},
-  
-// })
-// module.exports = mongoose.model('User', userSchema);
-
-

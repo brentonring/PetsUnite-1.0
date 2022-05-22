@@ -1,7 +1,6 @@
-//katie update this to look like events.js
-//update age to number not string change to age_unit to classify the year/month/day
+const db_service = require('../models/collections')
 
-let servicesCollection = [
+db_service.create = [
     {
       service: "feeding",
       animal_type: "reptile",
