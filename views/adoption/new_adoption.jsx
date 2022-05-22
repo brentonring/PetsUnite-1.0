@@ -1,7 +1,7 @@
 const React = require('react')
 const Def = require('../default')
 
-function newPet () {
+function newAdoption () {
     return (
         <Def>
             <main>
@@ -60,4 +60,4 @@ function newPet () {
     )
 }
 
-module.exports = newPet
+module.exports = newAdoption
