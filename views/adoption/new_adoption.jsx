@@ -4,8 +4,9 @@ const Def = require('../default')
 function newAdoption () {
     return (
         <Def>
-            <main>
+            <main id="main-container">
                 <h1 style={{textAlign: 'center'}}>Unite a Pet with a Loving Owner</h1>
+                <div>
                 <form method='POST' action='/adoption'>
                     <div className='form-group col-sm-6'>
                         <label htmlFor='name'>Pet Name</label>
@@ -55,6 +56,7 @@ function newAdoption () {
                         <input className='btn btn-primary' type='submit' value='Add Pet' />
                     </div>       
                 </form>
+                </div>
             </main>
         </Def>
     )
