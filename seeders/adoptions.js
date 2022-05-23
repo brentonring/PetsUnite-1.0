@@ -1,6 +1,6 @@
-const db_adoption = require('../models/collections')
+const db = require('../models/adoption')
 
-db_adoption.create = [
+db.Adoption.create([
     {
       animal_type: "dog",
       breed: "Labrador Retreiver",
@@ -62,4 +62,14 @@ db_adoption.create = [
       health_history: "missing some teeth",
       pic: "https://pixabay.com/photos/bearded-dragon-pet-lizard-dragon-4052825/"
     }
-  ]
+  ])
+
+  .then(() => {
+    console.log('Success!')
+    process.exit()
+  })
+
+  .catch(err => {
+    console.log('Error', err)
+    process.exit()
+  })
