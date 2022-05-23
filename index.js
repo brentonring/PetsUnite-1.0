@@ -1,11 +1,13 @@
 // Modules and Globals
 require("dotenv").config();
 const express = require("express");
-const methodOverride = require("method-override");
+// const methodOverride = require("method-override");
 const app = express();
+const methodOverride = require("method-override");
 const PORT = process.env.PORT; //PORT 3500
 
 // Middleware
+app.set('views', __dirname + '/views');
 app.set("view engine", "jsx");
 app.engine("jsx", require("express-react-views").createEngine());
 app.use(express.static("public"));
@@ -15,8 +17,8 @@ app.use(methodOverride("_method"));
 
 //routes
 app.use('/adoption', require('./controllers/adoption_ctr'))
-// app.use('/events', require('./controllers/events'))
-// app.use('/services', require('./controllers/services'))
+app.use('/events', require('./controllers/events_ctr'))
+app.use('/services', require('./controllers/services_ctr'))
 // Need help connecting app.use for events and services controller here ???
 
 // Homepage route

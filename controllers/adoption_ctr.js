@@ -1,15 +1,13 @@
 const router = require('express').Router();
 // const pets = require('../models/collections');
-const db = require('../models/adoption');
+const db = require('../models');
 
 //Controllers routes for Adoption
 //GET route pet adoption
 router.get('/', (req, res) => {
-    // res.render('adoption/index_adoption', {pets});
-    // res.send('GET /adoption stub')
     db.Adoption.find()
-      .then(pet => {
-        res.render('adoption/index_adoption', {pet});
+      .then(pets => {
+        res.render('adoption/index_adoption', {pets});
       })
       .catch(err => {
         console.log('err', err);
@@ -23,7 +21,26 @@ router.get ('/new', (req, res) => {
 })
 
 //POST add pet adoption
-
+router.post('/', (req, res) => {
+  db.Adoption.create(req.body)
+    .then(() => {
+      res.redirect('/adoption');
+    })
+    .catch(err => {
+      if(err && err.name === 'ValidationError'){
+        let message = "Validation Error: "
+        for(var field in err.errors){
+          message+= `${field} was ${err.errors[field].value}.`
+          message+= `${err.errors[field].message}`
+        }
+        console.log('Validation errore message', message)
+        res.render('adoption/new_adoption', {message})
+      }
+      else{
+        res.render('error404');
+      }
+    })
+})
 
 //Alissa--->Marisol I put in some code to test out the show page on my index, but i can't get it to generate an id number in the url. 
 //hopefully once katie finalizes the mongodb seeders and database content in teh collections.js and mongo_index.js it will be fixed. 
