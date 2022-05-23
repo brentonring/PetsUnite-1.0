@@ -34,7 +34,7 @@ db.Event.create([
     pic: "https://pixabay.com/photos/guinea-pig-animal-rodent-cute-3442756/"
   },{
     event_name: "How to Groom your Pet Bird",
-    date: "Thursday, June 23rd, 2022",
+    date: "06/23/2022",
     start_time: "7:00pm",
     end_time: "8:00pm",
     location: "Virtual Zoom Meeting",
