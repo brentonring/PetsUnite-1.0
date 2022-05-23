@@ -1,6 +1,6 @@
-const db_user = require('../models/collections')
+const db = require('../models');
 
-db_user.create = [
+db.User.create([
     {
       first_name: "Lance",
       last_name: "Weston",
@@ -38,4 +38,4 @@ db_user.create = [
       username: "crazy_cat_lady",
       password: "ILOVECATS!!!**11"
     }
-  ]
+  ])

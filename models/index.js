@@ -1,4 +1,4 @@
-require('dotenv').config()
+require('dotenv').config();
 const mongoose = require('mongoose');
 
 //DATABASE
@@ -8,6 +8,7 @@ mongoose.connect(mongooseURI, {useNewUrlParser: true, useUnifiedTopology: true},
     () => {console.log('connected to mongo: ', mongooseURI)}
 )
 
+//exporting all the databases
 module.exports.Adoption = require('./adoption');
 module.exports.Event = require('./event');
 module.exports.Service = require('./service');

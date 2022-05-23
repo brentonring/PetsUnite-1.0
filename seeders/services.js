@@ -1,6 +1,8 @@
-const db_service = require('../models/collections')
+const db = require('../models');
 
-db_service.create = [
+//Katie-->include event description for each
+//add age_unit to each
+db.Service.create([
     {
       service: "feeding",
       animal_type: "reptile",
@@ -57,4 +59,4 @@ db_service.create = [
       health_history: "none",
       pic: "https://pixabay.com/photos/budgerigar-parakeet-green-bird-204706/"
     }
-  ]
+  ])

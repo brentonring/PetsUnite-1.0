@@ -1,5 +1,6 @@
-const db = require('../models/adoption')
+const db = require('../models');
 
+//Katie--> include bio for each
 db.Adoption.create([
     {
       animal_type: "dog",
@@ -10,7 +11,7 @@ db.Adoption.create([
       age: 2, 
       age_unit: "years", 
       health_history: "none",
-      pic: "https://pixabay.com/photos/dog-nose-yellow-lab-labrador-loyal-1579614/"
+      pic: "https://cdn.pixabay.com/photo/2016/08/08/23/57/dog-1579614_960_720.jpg"
     },{
       animal_type: "dog",
       breed: "French Bulldog",
@@ -20,7 +21,7 @@ db.Adoption.create([
       age: 5,
       age_unit: "years",
       health_history: "deaf",
-      pic: "https://pixabay.com/photos/french-bulldog-dog-pet-canine-4713013/"
+      pic: "https://cdn.pixabay.com/photo/2019/12/22/17/13/french-bulldog-4713013_960_720.jpg"
     },{
       animal_type: "dog",
       breed: "Golden Retreiver",
@@ -30,7 +31,7 @@ db.Adoption.create([
       age: 2,
       age_unit: "months",
       health_history: "none",
-      pic: "https://pixabay.com/photos/puppy-golden-retriever-dog-young-1207816/"
+      pic: "https://cdn.pixabay.com/photo/2016/02/18/18/37/puppy-1207816_960_720.jpg"
     },{
       animal_type: "dog",
       breed: "Golden Retreiver",
@@ -40,7 +41,7 @@ db.Adoption.create([
       age: 2,
       age_unit: "months",
       health_history: "none",
-      pic: "https://pixabay.com/photos/dog-puppy-golden-retriever-breed-4372036/"
+      pic: "https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036_960_720.jpg"
     },{
       animal_type: "dog",
       breed: "Dachshund",
@@ -64,12 +65,12 @@ db.Adoption.create([
     }
   ])
 
-  .then(() => {
-    console.log('Success!')
-    process.exit()
-  })
+.then(() => {
+  console.log('Success!');
+  process.exit();
+})
 
-  .catch(err => {
-    console.log('Error', err)
-    process.exit()
-  })
+.catch(err => {
+  console.log('Error', err);
+  process.exit();
+})

@@ -11,6 +11,7 @@ const eventSchema = new mongoose.Schema({
     city: String,
     state: String,
     pic: {type: String, default: 'http://placekitten.com/200/200'},
-    
-  })
-  module.exports = mongoose.model('Event', eventSchema);
+})
+
+//exporting Event database
+module.exports = mongoose.model('Event', eventSchema);

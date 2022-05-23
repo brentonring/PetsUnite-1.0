@@ -11,6 +11,7 @@ const serviceSchema = new mongoose.Schema({
     age_unit: String,
     health_history: String,
     pic: {type: String, default: 'http://placekitten.com/200/200'},
-    
-  })
-  module.exports = mongoose.model('Service', serviceSchema);
+})
+
+//exporting Service database
+module.exports = mongoose.model('Service', serviceSchema);

@@ -12,7 +12,7 @@ const adoptionSchema = new mongoose.Schema({
     health_history: String,
     pic: {type: String, default: 'http://placekitten.com/200/200'}
     
-  })
+})
 
-  const Adoption = mongoose.model('Adoption', adoptionSchema);
-  module.exports = Adoption
+//exporting Adoption database
+module.exports = mongoose.model('Adoption', adoptionSchema);

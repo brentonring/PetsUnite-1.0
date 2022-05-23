@@ -1,7 +1,7 @@
-const db_event = require('../models/collections') 
-// const { db } = require('../models/Collections/collections')
+const db = require('../models');
 
-db_event.create ([
+//Katie--> include event description for each
+db.Event.create([
   {
     event_name: "Doggie Play Date",
     date: "06/11/2022",
@@ -64,3 +64,13 @@ db_event.create ([
     pic: "https://pixabay.com/photos/cat-friendship-animals-pet-1148305/"
   }
 ])
+
+.then(() => {
+  console.log('Success!');
+  process.exit();
+})
+
+.catch(err => {
+  console.log('Error', err);
+  process.exit();
+})
