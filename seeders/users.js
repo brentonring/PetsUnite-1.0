@@ -38,4 +38,14 @@ db.User.create([
       username: "crazy_cat_lady",
       password: "ILOVECATS!!!**11"
     }
-  ])
+])
+
+.then(() => {
+  console.log('Success!');
+  process.exit();
+})
+
+.catch(err => {
+  console.log('Error', err);
+  process.exit();
+})

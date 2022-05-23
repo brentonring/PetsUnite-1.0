@@ -1,5 +1,4 @@
 const router = require('express').Router();
-// const services = require('../models/collections');
 const db = require('../models');
 
 //Controllers routes for Services
@@ -27,11 +26,27 @@ router.get ('/new', (req, res) => {
 
 
 //GET edit service
-
+router.get('/:id/edit', (req, res) => {
+    db.Service.findById(req.params.id)
+      .then(services => {
+        res.render('services/edit_services', {services})
+      })
+      .catch(err => {
+        res.render('error404')
+      })
+  })
 
 //PUT edit service
-
+router.put('/:id', (req, res) =>{
+    db.Service.findByIdAndUpdate(req.params.id, req.body, {runValidators: true})
+      .then(() => {
+        res.redirect(`/services/${req.params.id}`);
+      })
+      .catch(err => {
+        res.render('error404');
+      })
+})
 
 //DELETE service
 
-module.exports = router
+module.exports = router;

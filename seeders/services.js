@@ -59,4 +59,14 @@ db.Service.create([
       health_history: "none",
       pic: "https://pixabay.com/photos/budgerigar-parakeet-green-bird-204706/"
     }
-  ])
+])
+
+.then(() => {
+  console.log('Success!');
+  process.exit();
+})
+
+.catch(err => {
+  console.log('Error', err);
+  process.exit();
+})

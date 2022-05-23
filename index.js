@@ -15,11 +15,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 
 
-//routes
-app.use('/adoption', require('./controllers/adoption_ctr'))
-app.use('/events', require('./controllers/events_ctr'))
-app.use('/services', require('./controllers/services_ctr'))
-// Need help connecting app.use for events and services controller here ???
+//routes to adoption, events and services controllers
+app.use('/adoption', require('./controllers/adoption_ctr'));
+app.use('/events', require('./controllers/events_ctr'));
+app.use('/services', require('./controllers/services_ctr'));
 
 // Homepage route
 app.get("/", (req, res) => {

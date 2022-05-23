@@ -1,5 +1,4 @@
 const router = require('express').Router();
-// const events = require('../models/collections');
 const db = require('../models');
 
 //Controllers routes for Events
@@ -32,11 +31,27 @@ router.get('/show', (req, res) => {
 
 
 //GET edit events
-
+router.get('/:id/edit', (req, res) => {
+    db.Event.findById(req.params.id)
+      .then(events => {
+        res.render('events/edit_events', {events})
+      })
+      .catch(err => {
+        res.render('error404')
+      })
+})
 
 //PUT edit events
-
+router.put('/:id', (req, res) =>{
+    db.Event.findByIdAndUpdate(req.params.id, req.body, {runValidators: true})
+      .then(() => {
+        res.redirect(`/events/${req.params.id}`);
+      })
+      .catch(err => {
+        res.render('error404');
+      })
+})
 
 //DELETE events
 
-module.exports = router
+module.exports = router;
