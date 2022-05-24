@@ -46,15 +46,15 @@ router.post('/', (req, res) => {
 //GET show pet adoption
 router.get('/:id', (req, res) => {
     // res.send("GET adoption/show")
-    res.render('adoption/show_adoption')
+    // res.render('adoption/show_adoption')
     //mongo code
-    // db.Adoption.findById(req.params.id)
-    // .then(pets => {
-    //   res.render('adoption/show_adoption', {pets});
-    // })
-    // .catch(err => {
-    //   res.render('error404');
-    // })
+    db.Adoption.findById(req.params.id)
+    .then(pets => {
+      res.render('adoption/show_adoption', {pets});
+    })
+    .catch(err => {
+      res.render('error404');
+    })
 })
 // I used Postman to check route above. It's good as is. Once we connect data on Mongoose, I will include the commented sections.
 
