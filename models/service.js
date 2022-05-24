@@ -10,7 +10,8 @@ const serviceSchema = new mongoose.Schema({
     age: Number,
     age_unit: String,
     health_history: String,
-    pic: {type: String, default: 'http://placekitten.com/200/200'},
+    details: String,
+    pic: {type: String, default: 'https://cdn.pixabay.com/photo/2017/12/25/11/32/cat-3038243__340.jpg'},
 })
 
 //exporting Service database

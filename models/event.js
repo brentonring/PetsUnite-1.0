@@ -10,7 +10,8 @@ const eventSchema = new mongoose.Schema({
     address: String,
     city: String,
     state: String,
-    pic: {type: String, default: 'http://placekitten.com/200/200'},
+    event_details: String,
+    pic: {type: String, default: 'https://cdn.pixabay.com/photo/2020/10/06/11/50/dog-5632005__340.jpg'},
 })
 
 //exporting Event database

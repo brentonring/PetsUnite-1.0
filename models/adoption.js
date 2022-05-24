@@ -10,7 +10,8 @@ const adoptionSchema = new mongoose.Schema({
     age: Number,
     age_unit: String,
     health_history: String,
-    pic: {type: String, default: 'http://placekitten.com/200/200'}
+    bio: String,
+    pic: {type: String, default: 'https://cdn.pixabay.com/photo/2014/12/17/05/22/dog-571125__340.jpg'}
     
 })
 
