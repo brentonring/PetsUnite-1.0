@@ -20,8 +20,9 @@ function newAdoption () {
                             <option>Cat</option>
                             <option>Bird</option> 
                             <option>Rodent</option> {/* ADD FUNCTIONALITY TO THESE */}
-                            <option>Reptiles</option>
+                            <option>Reptile</option>
                             <option>Fish</option>
+                            <option>Other</option>
                         </select>
                     </div>
                     <div className='form-group col-sm-4'>
