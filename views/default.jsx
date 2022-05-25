@@ -38,9 +38,9 @@ function Def (html) {
                             <form className="form-inline mt-2 mt-md-0" method="GET" action={`/login`}>
                                 <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
                             </form>
-                            {/* <form className="form-inline mt-2 mt-md-0" method="GET" action={`/register`}>
+                            <form className="form-inline mt-2 mt-md-0" method="GET" action={`/register`}>
                                 <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Register</button>
-                            </form> */}
+                            </form>
                         {/* <div className='login-container'>
                             <ul className="navbar-nav ml-auto mt-2 mt-lg-0"  id="nav-buttons">
                                 <li className="nav-item" id="nav-button">
@@ -67,14 +67,6 @@ function Def (html) {
                 <div className="container pt-4">
                     {/* <!-- Section: Social media --> */}
                     <section className="mb-4">
-                        {/* <!-- Facebook -->
-                        <a className="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i className="fab fa-facebook-f"></i></a>
-                        <!-- Instagram -->
-                        <a className="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i className="fab fa-instagram"></i></a>
-                        <!-- Linkedin -->
-                        <a className="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i className="fab fa-linkedin"></i></a>
-                        <!-- Github -->
-                        <a className="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i className="fab fa-github"></i></a> */}
                         <a className="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-facebook" viewBox="0 0 16 16">
                         <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
                         </svg></a>
@@ -98,6 +90,8 @@ function Def (html) {
                 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossOrigin="anonymous"></script>
                 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossOrigin="anonymous"></script>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossOrigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.6.3/umd/react.production.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.6.3/umd/react-dom.production.min.js"></script>
             </body>            
         </html>
     )
