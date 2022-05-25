@@ -4,7 +4,7 @@ const Def = require('../default')
 function showPet(data) {
     return (
         <Def>
-            <main>
+            <main id="main-container">
                 <h1>I'M READY FOR MY NEW FAMILY!</h1>                
                 <img src={data.pets.pic} />
                 <h2>Hi! My Name Is {data.pets.name}</h2>
