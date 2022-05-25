@@ -77,6 +77,33 @@ router.put('/:id', (req, res) =>{
     })
 })
 
+//post comment to place
+router.post('/:id/comment', (req, res) => {
+  console.log('post comment', req.body)
+  if (req.body.author === '') { req.body.author = undefined }
+    req.body.rant = req.body.rant ? true : false
+    db.Adoption.findById(req.params.id)
+        .then(pets => {
+            db.Comment.create(req.body)
+                .then(comment => {
+                    pets.comments.push(comment.id)
+                    pets.save()
+                        .then(() => {
+                            res.redirect(`/adoption/${req.params.id}`)
+                        })
+                        .catch(err => {
+                            res.render('error404')
+                        })
+                })
+                .catch(err => {
+                    res.render('error404')
+                })
+        })
+        .catch(err => {
+            res.render('error404')
+        })
+})
+
 //DELETE pet adoption
 
 
