@@ -41,13 +41,9 @@ router.post('/', (req, res) => {
     })
 })
 
-//Alissa--->Marisol I put in some code to test out the show page on my index, but i can't get it to generate an id number in the url. 
-//hopefully once katie finalizes the mongodb seeders and database content in teh collections.js and mongo_index.js it will be fixed. 
+
 //GET show pet adoption
-router.get('/:id', (req, res) => {
-    // res.send("GET adoption/show")
-    // res.render('adoption/show_adoption')
-    //mongo code
+router.get('/:id', (req, res) => {    
     db.Adoption.findById(req.params.id)
     .then(pets => {
       res.render('adoption/show_adoption', {pets});
@@ -56,7 +52,7 @@ router.get('/:id', (req, res) => {
       res.render('error404');
     })
 })
-// I used Postman to check route above. It's good as is. Once we connect data on Mongoose, I will include the commented sections.
+
 
 //GET edit pet adoption
 router.get('/:id/edit', (req, res) => {

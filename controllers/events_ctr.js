@@ -24,9 +24,15 @@ router.get ('/new', (req, res) => {
 
 
 //GET show events
-router.get('/show', (req, res) => {
-    res.send("GET events/show")
-    // res.render('events/show')
+router.get('/:id', (req, res) => {    
+  db.Event.findById(req.params.id)
+  .then(events => {
+    res.render('events/show_events', {events});
+  })
+  .catch(err => {
+    console.log('err', err);
+    res.render('error404');
+  })
 })
 
 

@@ -19,7 +19,7 @@ function showPet(data) {
                     <img id="icons" src="/images/icons/icon_bday32.png"></img>{data.pets.age} {data.pets.age_unit}
                 </li>
                 <li className='list-group-item text-capitalize rounded'>
-                    <img id="icons" src="/images/icons/icon8-stethoscope-32.png"></img><p>Health info: {data.pets.health_history}</p>
+                    <img id="icons" src="/images/icons/icon_lightgreen_heart32.png"></img><span>Health History: {data.pets.health_history}</span>
                 </li>
                 <a href={`/adoption/${data.id}/edit`} className='btn btn-warning'>Edit</a>
                 <form method='POST' action={`/adoption/${data.id}?_method=DELETE`}>
