@@ -45,6 +45,7 @@ router.post('/', (req, res) => {
 //GET show pet adoption
 router.get('/:id', (req, res) => {    
     db.Adoption.findById(req.params.id)
+    .populate('comments')
     .then(pets => {
       res.render('adoption/show_adoption', {pets});
     })
