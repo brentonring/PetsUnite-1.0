@@ -160,6 +160,9 @@ img{
 .btn-warning{
     margin-right: 20px;
 }
+.btn-warning:hover{
+    transform: scale(1.2);
+}
 .btn-danger:hover{
     transform: scale(1.2);
 }

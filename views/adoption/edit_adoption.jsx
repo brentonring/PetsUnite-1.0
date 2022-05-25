@@ -4,7 +4,7 @@ const Def = require('../default')
 function editPet () {
     return (
         <Def>
-            <main>
+            <main id="main-container">
                 <h1 className="text-center">Unite a Pet with a Loving Owner</h1>
                 <form method='POST' action='/adoption'>
                     <div className='form-group col-sm-6'>
@@ -19,8 +19,9 @@ function editPet () {
                             <option>Cat</option>
                             <option>Bird</option> 
                             <option>Rodent</option> {/* ADD FUNCTIONALITY TO THESE */}
-                            <option>Reptiles</option>
+                            <option>Reptile</option>
                             <option>Fish</option>
+                            <option>Other</option>
                         </select>
                     </div>
                     <div className='form-group col-sm-4'>
