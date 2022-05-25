@@ -13,3 +13,4 @@ module.exports.Adoption = require('./adoption');
 module.exports.Event = require('./event');
 module.exports.Service = require('./service');
 module.exports.User = require('./user');
+module.exports.Comment = require('./comment');

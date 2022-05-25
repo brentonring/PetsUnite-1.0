@@ -11,9 +11,12 @@ const adoptionSchema = new mongoose.Schema({
     age_unit: String,
     health_history: String,
     bio: String,
-    pic: {type: String, default: 'https://cdn.pixabay.com/photo/2014/12/17/05/22/dog-571125__340.jpg'}
-    
-})
+    pic: {type: String, default: 'https://cdn.pixabay.com/photo/2014/12/17/05/22/dog-571125__340.jpg'},
+    comments: [{ 
+        type: mongoose.Schema.Types.ObjectId, 
+        ref: 'Comment' 
+    }],
+});
 
 //exporting Adoption database
 module.exports = mongoose.model('Adoption', adoptionSchema);
