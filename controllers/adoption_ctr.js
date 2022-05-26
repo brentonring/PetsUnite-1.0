@@ -77,6 +77,9 @@ router.put('/:id', (req, res) =>{
 })
 
 //DELETE pet adoption
-
+router.delete('/:id', async (req, res) => {
+  let deletedAdoption = await db.Adoption.findByIdAndDelete(req.params.id)
+  res.status(303).redirect('/adoption')
+})
 
 module.exports = router;

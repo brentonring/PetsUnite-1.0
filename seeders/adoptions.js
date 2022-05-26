@@ -56,7 +56,7 @@ db.Adoption.create([
       age_unit: "months",
       health_history: "mild skin condition",
       bio: "This adorable boy's favorite things are snuggling under blankets and taking leisurly strolls in the evening. Hotdog tends to get rashes and requires a grain-free diet that manages his skin issues well.",
-      pic: "https://pixabay.com/photos/dachshund-puppy-pet-canine-animal-1519374/"
+      pic: "https://cdn.pixabay.com/photo/2016/07/15/15/55/dachshund-1519374_1280.jpg"
     },{
       animal_type: "reptile",
       breed: "Bearded Dragon",
@@ -67,7 +67,7 @@ db.Adoption.create([
       age_unit: "years",
       health_history: "missing some teeth",
       bio: "Toothless is a lazy lizard who's looking for an adventourous soul for a new compantion. He's mellow and easy to care for and loves crickets.",
-      pic: "https://pixabay.com/photos/bearded-dragon-pet-lizard-dragon-4052825/"
+      pic: "https://cdn.pixabay.com/photo/2019/03/13/12/23/bearded-dragon-4052825_1280.jpg"
     }
   ])
 
