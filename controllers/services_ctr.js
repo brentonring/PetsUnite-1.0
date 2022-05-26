@@ -21,20 +21,17 @@ router.get ('/new', (req, res) => {
 
 //POST add service
 
-// Marisol - Waiting on updates to services seed data. Render code ready below.
+
 //GET show service
-router.get('/:id', (req, res) => {
-  // res.send("GET services/show_services")
-//   res.render('events/show')
-// })
-db.Service.findById(req.params.id)
-  .then(services => {
-    res.render('services/show_services', {services})
-  })
-  .catch(err => {
-    console.log('err', err);
-    res.render('error404');
-  })
+router.get('/:id', (req, res) => {  
+    db.Service.findById(req.params.id)
+      .then(services => {
+        res.render('services/show_services', {services})
+      })
+      .catch(err => {
+        console.log('err', err);
+        res.render('error404');
+      })
 })
 
 //GET edit service

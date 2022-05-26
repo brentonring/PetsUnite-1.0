@@ -26,7 +26,9 @@ router.get ('/new', (req, res) => {
 //GET show events
 router.get('/:id', (req, res) => {    
   db.Event.findById(req.params.id)
+  .populate('comments')
   .then(events => {
+    console.log(events.comments)
     res.render('events/show_events', {events});
   })
   .catch(err => {
@@ -56,6 +58,33 @@ router.put('/:id', (req, res) =>{
       .catch(err => {
         res.render('error404');
       })
+})
+
+//post comment to place
+router.post('/:id/comment', (req, res) => {
+  console.log('post comment', req.body)
+  if (req.body.author === '') { req.body.author = undefined }
+    req.body.event = req.body.event ? true : false
+    db.Event.findById(req.params.id)
+        .then(events => {
+            db.Comment.create(req.body)
+                .then(comment => {
+                    events.comments.push(comment.id)
+                    events.save()
+                        .then(() => {
+                            res.redirect(`/events/${req.params.id}`)
+                        })
+                        .catch(err => {
+                            res.render('error404')
+                        })
+                })
+                .catch(err => {
+                    res.render('error404')
+                })
+        })
+        .catch(err => {
+            res.render('error404')
+        })
 })
 
 //DELETE events

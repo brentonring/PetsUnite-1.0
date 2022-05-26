@@ -14,3 +14,4 @@ module.exports.Event = require('./event');
 module.exports.Service = require('./service');
 module.exports.User = require('./user');
 module.exports.Comment = require('./comment');
+module.exports.Eventcomment = require('./event_comment')
