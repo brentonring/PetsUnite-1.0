@@ -67,7 +67,7 @@ router.post('/:id/comment', (req, res) => {
     req.body.event = req.body.event ? true : false
     db.Event.findById(req.params.id)
         .then(events => {
-            db.Comment.create(req.body)
+            db.Eventcomment.create(req.body)
                 .then(comment => {
                     events.comments.push(comment.id)
                     events.save()
