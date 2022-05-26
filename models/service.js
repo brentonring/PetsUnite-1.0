@@ -12,7 +12,7 @@ const serviceSchema = new mongoose.Schema({
     health_history: String,
     details: String,
     pic: {type: String, default: 'https://cdn.pixabay.com/photo/2017/12/25/11/32/cat-3038243__340.jpg'},
-})
+});
 
 //exporting Service database
 module.exports = mongoose.model('Service', serviceSchema);
