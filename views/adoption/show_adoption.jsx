@@ -11,7 +11,7 @@ function showPet(data) {
         comments = data.pets.comments.map(c => {
             return (
                 <div className='border'>
-                    <h2 className='rant'>{c.rant ? 'Rant! 😡' : 'Rave! 😻'}</h2>
+                    <h2 className='adopt'>{c.adopt ? 'Interested in adopting! <img id="icons" src="/images/icons/icon_gender32.png"></img> ' : ' ❤️ ' }</h2>
                     <h4>{c.content}</h4>
                     <h3><strong>- {c.author}</strong></h3>
                     <h4>Rating: {c.stars}</h4>
@@ -45,7 +45,7 @@ function showPet(data) {
                     <img id="icons" src="/images/icons/icon_bday32.png"></img>{data.pets.age} {data.pets.age_unit}
                 </li>
                 <li className='list-group-item text-capitalize rounded'>
-                    <img id="icons" src="/images/icons/icon_lightgreen_heart32.png"></img><span>Health History: {data.pets.health_history}</span>
+                    <img id="icons" src="/images/icons/icons8-stethoscope-32.png"></img><span>Health History: {data.pets.health_history}</span>
                 </li>
                 <li className='list-group-item text-capitalize rounded'>
                 <a href={`/adoption/${data.id}/edit`} className='btn btn-success'>
@@ -91,8 +91,8 @@ function showPet(data) {
                                 <input type="range" step="1.0" min="1" max="5" id="stars" name="stars" className="form-control" />
                             </div>
                             <div className="form-group col-sm-2">
-                                <label htmlFor="rant">Rant?</label>
-                                <input type="checkbox" id="rant" name="rant" className="form-control form-check-input" />
+                                <label htmlFor="adopt">Apply to adopt {data.pets.name}!</label>
+                                <input type="checkbox" id="adopt" name="adopt" className="form-control form-check-input" />
                             </div>
                         </div>
                         <div className='text-center'>
