@@ -25,20 +25,20 @@ function showPet(data) {
                 <h1>I'M READY FOR MY NEW FAMILY!</h1>  
                 <div className="row">
                             <div className="form-group col-sm-6">
-                            <li className='list-group-item text-capitalize rounded'>
+                            <li className='list-group-item  rounded'>
                 <img src={data.pets.pic} />
                 </li>   
-                <li className='list-group-item text-capitalize rounded'>
+                <li className='list-group-item  rounded'>
                 <h2>Hi! My Name Is {data.pets.name}</h2>
                 <h3>I'm Available</h3>   
                 </li> 
-                <li className='list-group-item text-capitalize rounded'>
+                <li className='list-group-item  rounded'>
                 <p>{data.pets.bio}</p>
                 </li>                             
-                <li className='list-group-item text-capitalize rounded'>
+                <li className='list-group-item  rounded'>
                     <img id="icons" src="/images/icons/icon_bread32.png"></img>{data.pets.breed}
                 </li>
-                <li className='list-group-item text-capitalize rounded'>
+                <li className='list-group-item  rounded'>
                     <img id="icons" src="/images/icons/icon_gender32.png"></img>{data.pets.gender}
                 </li>
                 <li className='list-group-item text-capitalize rounded'>
