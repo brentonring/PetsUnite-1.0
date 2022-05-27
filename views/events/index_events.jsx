@@ -16,7 +16,7 @@ function indexEvents (data) {
                                 <img id="icons" src="/images/icons/icon_date32.png"></img>{event.date}, {event.start_time} - {event.end_time}
                             </li>
                             <li className='list-group-item text-capitalize rounded'>
-                                <img id="icons" src="/images/icons/icon_location32.png"></img>{event.location}
+                                <img id="icons" src="/images/icons/icon_location32.png"></img>{event.location}, {event.city}
                             </li>
                         </ul>
                         <div id="card-content-buttons" className='text-center mx-auto d-block'>

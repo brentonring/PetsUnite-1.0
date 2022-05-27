@@ -160,6 +160,9 @@ img{
 .btn-warning{
     margin-right: 20px;
 }
+.btn-warning:hover{
+    transform: scale(1.2);
+}
 .btn-danger:hover{
     transform: scale(1.2);
 }
@@ -189,4 +192,7 @@ footer{
 }
 #copyright{
     background-color:rgba(0, 0, 0, 0.2);
+}
+footer a:hover{
+    fill: var(--palette-dark-green);
 }

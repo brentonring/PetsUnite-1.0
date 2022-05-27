@@ -59,5 +59,9 @@ router.put('/:id', (req, res) =>{
 })
 
 //DELETE events
+router.delete('/:id', async (req, res) => {
+  let deletedEvent = await db.Event.findByIdAndDelete(req.params.id)
+  res.status(303).redirect('/events')
+})
 
 module.exports = router;
