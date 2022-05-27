@@ -85,8 +85,8 @@ nav ul{
 main {
     margin-right: 20px;
     margin-left: 20px;
-    /* background-color: white;
-    border-radius: 2%; */
+    background-color: white;
+    /* border-radius: 2%; */
 }
 #main-container{
     background-color: white;
@@ -209,3 +209,4 @@ footer a:hover{
     margin: 20px;
     font-size: 13px;
 }
+
