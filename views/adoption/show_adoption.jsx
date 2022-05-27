@@ -45,6 +45,7 @@ function showPet(data) {
                     <img id="icons" src="/images/icons/icon_bday32.png"></img>{data.pets.age} {data.pets.age_unit}
                 </li>
                 <li className='list-group-item text-capitalize rounded'>
+
                     <img id="icons" src="/images/icons/icons8-stethoscope-32.png"></img><span>Health History: {data.pets.health_history}</span>
                 </li>
                 <li className='list-group-item text-capitalize rounded'>
@@ -64,7 +65,7 @@ function showPet(data) {
                  <div className="form-group col-sm-6"> 
                             <li className='list-group-item text-capitalize rounded'>
                             <h2>Comments</h2>
-                            
+
                 <div className="row">               
                     {comments}               
                 </div>
