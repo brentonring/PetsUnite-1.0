@@ -10,10 +10,13 @@ function Def (html) {
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"></link>
                 <link rel="stylesheet" href="/css/style.css"></link>
                 <link rel="shortcut icon" type="image/jpg" href="/images/favicon/green_house_favicon.ico"></link>
+                <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
+                <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Montserrat:wght@300&display=swap" rel="stylesheet"></link>
             </head>
             <body>
                 <header>
-                    <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+                    <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light p-3">
                             <a className="nav-brand" href="/">
                                 <img className="d-inline-block align-top" id="logo-img" src="/images/logo/logo50x50.png" width="50px" height="50px" alt="Green house cat and dog logo"></img>
                             </a>
@@ -23,22 +26,22 @@ function Def (html) {
                         <div className="navbar-collapse collapse" id="navbarCollapse" style={{flexGrow: '1'}}>
                             <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                                 <li className="nav-item active">
-                                    <a className="nav-link" href="/">Home</a>
+                                    <a className="nav-link mx-3" href="/">Home</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/adoption">Adoption</a>
+                                    <a className="nav-link mx-3" href="/adoption">Adoption</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/services">Services</a>
+                                    <a className="nav-link mx-3" href="/services">Services</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/events">Events</a>
+                                    <a className="nav-link mx-3" href="/events">Events</a>
                                 </li>
                             </ul>
-                            <form className="form-inline mt-2 mt-md-0" method="GET" action={`/login`}>
+                            <form className="form-inline mt-2 mx-2 mt-md-0" class="nav-btn" method="GET" action={`/login`}>
                                 <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
                             </form>
-                            <form className="form-inline mt-2 mt-md-0" method="GET" action={`/register`}>
+                            <form className="form-inline mt-2 mx-2 mt-md-0" method="GET" action={`/register`}>
                                 <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Register</button>
                             </form>
                         {/* <div className='login-container'>
@@ -66,6 +69,13 @@ function Def (html) {
             <footer className="text-center text-white">
                 <div className="container pt-4">
                     {/* <!-- Section: Social media --> */}
+                    <section>
+                      <a className="page-link" href="http://localhost:3500/">Home</a>
+                      <a className="page-link" href="http://localhost:3500/adoption">Adoption</a>
+                      <a className="page-link" href="http://localhost:3500/services">Services</a>
+                      <a className="page-link" href="http://localhost:3500/events">Events</a>
+                    </section>
+                    <hr></hr>
                     <section className="mb-4">
                         {/* <a className="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" className="bi bi-facebook" viewBox="0 0 16 16">
                         <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
@@ -77,29 +87,29 @@ function Def (html) {
                         <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
                         </svg></a> */}
                         {/* Alissa's Github */}
-                        <a className="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/alissamak" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" className="bi bi-github" viewBox="0 0 16 16">
+                        <a className="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/alissamak" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" className="bi bi-github" viewBox="0 0 16 16">
                         <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                         </svg></a>
                         {/* Brenton's Github */}
-                        <a className="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/brentonring" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" className="bi bi-github" viewBox="0 0 16 16">
+                        <a className="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/brentonring" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" className="bi bi-github" viewBox="0 0 16 16">
                         <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                         </svg></a>
                         {/* Marisol's Github */}
-                        <a className="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/marisoldrodriguez" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" className="bi bi-github" viewBox="0 0 16 16">
+                        <a className="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/marisoldrodriguez" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" className="bi bi-github" viewBox="0 0 16 16">
                         <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                         </svg></a>
                         {/* Katie's Github */}
-                        <a className="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/kleells" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" className="bi bi-github" viewBox="0 0 16 16">
+                        <a className="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/kleells" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" className="bi bi-github" viewBox="0 0 16 16">
                         <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                         </svg></a>
                         {/* Eric's Github */}
-                        <a className="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/ericlowe25" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" className="bi bi-github" viewBox="0 0 16 16">
+                        <a className="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/ericlowe25" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" className="bi bi-github" viewBox="0 0 16 16">
                         <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                         </svg></a>
                     </section>
                 </div>
                 {/* <!-- Copyright --> */}
-                <div id="copyright" className="text-center text-dark p-3">
+                <div id="copyright" className="text-center text-dark p-2">
                     © 2022 Copyright:
                     <a className="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
                 </div>
