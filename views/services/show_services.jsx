@@ -2,6 +2,23 @@ const React = require('react')
 const Def = require('../default')
 
 function showServices(data) {
+    let comments = (
+        <h3>No comments yet!</h3>
+    )
+    if (data.services.comments.length) {
+        comments = data.services.comments.map(c => {
+            return (
+                <div className='border'>
+                    <h2 className='service'>{c.service ? `I'm interested in the service! 🥰 `  : 'Admirer! ❤️ ' }</h2>
+                    <h4>{c.content}</h4>
+                    <h3><strong>- {c.author}</strong></h3>
+                    <h4>Rating: {c.stars}</h4>
+                </div>
+            )
+        })
+    }
+
+
     return (
         <Def>
             <main>
@@ -9,8 +26,9 @@ function showServices(data) {
                  <h2 style={{textAlign: 'center'}}>{data.services.service}!</h2> 
                  <div className="row">
                             <div className="form-group col-sm-6">
-                            <li className='list-group-item text-capitalize rounded'></li>               
+                            <li className='list-group-item text-capitalize rounded'>            
                 <img src={data.services.pic} />
+                </li>
 
                 <li className='list-group-item text-capitalize rounded'>
                 <a href={`/events/${data.id}/edit`} className='btn btn-success'>
@@ -25,9 +43,47 @@ function showServices(data) {
                     </svg>Delete</button>
                 </form>  
                 </li>  
-               
-
                 </div>
+                 <div className="form-group col-sm-6"> 
+                            <li className='list-group-item text-capitalize rounded'>
+                            <h2>Comments</h2>
+                            
+                <div className="row">               
+                    {comments}               
+                </div>
+                </li>
+                </div>  
+                <li className='list-group-item text-capitalize rounded'>  
+                <hr />
+                <h2>Please leave a comment!</h2>
+                    <form action={`/services/${data.services._id}/comment`} method="POST">
+                        <div className="row">
+                            <div className="form-group col-sm-12">
+                            <label htmlFor="content">Content</label>
+                            <textarea id="content" name="content" className="form-control"></textarea>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="form-group col-sm-5">
+                                <label htmlFor="author">Author</label>
+                                <input id="author" name="author" className="form-control" />
+                            </div>
+                            <div className="form-group col-sm-5">
+                                <label htmlFor="stars">Star Rating</label>
+                                <input type="range" step="1.0" min="1" max="5" id="stars" name="stars" className="form-control" />
+                            </div>
+                            <div className="form-group col-sm-2">
+                                <label htmlFor="service">I'm interested in {data.services.service}!</label>
+                                <input type="checkbox" id="event" name="service" className="form-control form-check-input" />
+                            </div>
+                        </div>
+                        <div className='text-center'>
+                        <input className='btn btn-primary' type='submit' value='Add Comment' />
+                    </div>  
+                    </form> 
+                    </li> 
+
+                
                 </div>
             </main>
         </Def>

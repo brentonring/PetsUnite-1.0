@@ -25,7 +25,9 @@ router.get ('/new', (req, res) => {
 //GET show service
 router.get('/:id', (req, res) => {  
     db.Service.findById(req.params.id)
+    .populate('comments')
       .then(services => {
+        console.log(services.comments)
         res.render('services/show_services', {services})
       })
       .catch(err => {
