@@ -5,7 +5,7 @@ function showServices(data) {
     return (
         <Def>
             <main>
-                <h1>Check out our service:</h1>
+                <h1>Check out our service!</h1>
                  <h2 style={{textAlign: 'center'}}>{data.services.service}!</h2> 
                  <div className="row">
                             <div className="form-group col-sm-6">

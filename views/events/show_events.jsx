@@ -20,7 +20,7 @@ function showEvents(data) {
     return (
         <Def>
             <main>
-                <h1>Check out the event:</h1>
+                <h1>Check out the event!</h1>
                 <h2 style={{textAlign: 'center'}}>{data.events.event_name}</h2>                
                 <div className="row">
                             <div className="form-group col-sm-6">

@@ -15,3 +15,4 @@ module.exports.Service = require('./service');
 module.exports.User = require('./user');
 module.exports.Comment = require('./comment');
 module.exports.Eventcomment = require('./event_comment')
+module.exports.Servicecomment = require('./service_comment')
