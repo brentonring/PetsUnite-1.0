@@ -81,7 +81,7 @@ router.put('/:id', (req, res) =>{
 router.post('/:id/comment', (req, res) => {
   console.log('post comment', req.body)
   if (req.body.author === '') { req.body.author = undefined }
-    req.body.rant = req.body.rant ? true : false
+    req.body.adopt = req.body.adopt ? true : false
     db.Adoption.findById(req.params.id)
         .then(pets => {
             db.Comment.create(req.body)

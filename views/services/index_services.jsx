@@ -44,10 +44,10 @@ function indexServices (data) {
     return(
         <Def>
             <main>
-                <h1>HIRE A PET SERVICE!</h1>
+                <h1>Pet Services Needed!</h1>
                 <div id="main-container">
                     <div className='text-center'>
-                        <form method="GET" action="/services/new_services">
+                        <form method="GET" action="/services/new">
                             <input className='btn btn-primary' type="submit" value="Add a Service"></input>
                         </form> 
                     </div>
