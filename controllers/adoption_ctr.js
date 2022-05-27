@@ -19,6 +19,12 @@ router.get ('/new', (req, res) => {
     res.render('adoption/new_adoption')
 })
 
+//DELETE pet adoption
+router.delete('/:id', async (req, res) => {
+  let deletedAdoption = await db.Adoption.findByIdAndDelete(req.params.id)
+  res.status(303).redirect('/adoption')
+});
+
 //POST add pet adoption
 router.post('/', (req, res) => {
   db.Adoption.create(req.body)
@@ -83,7 +89,7 @@ router.put('/:id', (req, res) =>{
 router.post('/:id/comment', (req, res) => {
   console.log('post comment', req.body)
   if (req.body.author === '') { req.body.author = undefined }
-    req.body.rant = req.body.rant ? true : false
+    req.body.adopt = req.body.adopt ? true : false
     db.Adoption.findById(req.params.id)
         .then(pets => {
             db.Comment.create(req.body)
@@ -106,10 +112,5 @@ router.post('/:id/comment', (req, res) => {
         })
 });
 
-//DELETE pet adoption
-router.delete('/:id', async (req, res) => {
-  let deletedAdoption = await db.Adoption.findByIdAndDelete(req.params.id)
-  res.status(303).redirect('/adoption')
-});
 
 module.exports = router;

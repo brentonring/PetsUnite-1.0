@@ -57,8 +57,12 @@ function newService () {
                         <label htmlFor='pic'>Picture</label>
                         <input className='form-control' id='pic' name='pic'/>
                     </div>
+                    <div className='form-group col-sm-12'>
+                        <label htmlFor='details'>Details</label>
+                        <textarea className='form-control' id='details' name='details' rows='3' />
+                    </div>
                     <div className='text-center'>
-                        <input className='btn btn-primary' type='submit' value='Add Pet' />
+                        <input className='btn btn-primary' type='submit' value='Add Service' />
                     </div>       
                 </form>
             </main>

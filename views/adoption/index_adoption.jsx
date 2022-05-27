@@ -43,7 +43,7 @@ function indexAdoption (data) {
     return(
         <Def>
             <main>
-                <h1>ADOPT A PET!</h1>
+                <h1>Adopt a Pet!</h1>
                 <div id="main-container">
                     <div className='text-center'>
                         <form method="GET" action="/adoption/new">
