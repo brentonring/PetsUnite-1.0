@@ -8,7 +8,7 @@ function error404(){
                 <h1>404: PAGE NOT FOUND</h1>
                 <p>Oops, sorry! We can't find this page!</p>
                 <div>
-                    <img src="http://placekitten.com/250/250" alt="Cute kitten image"></img> 
+                    <img src="https://cdn.pixabay.com/photo/2016/11/18/16/16/teddy-bear-1835598__480.jpg" alt="Photo of a Teddy Bear"></img> 
                 </div>
                 <a href="/"><button className="btn btn-primary">Home Page</button></a> 
             </main>
