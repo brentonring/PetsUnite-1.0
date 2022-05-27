@@ -45,13 +45,12 @@ function showServices(data) {
                 </li>  
                 </div>
                  <div className="form-group col-sm-6"> 
-                            <li className='list-group-item text-capitalize rounded'>
-                            <h2>Comments</h2>
-                            
+                        <li className='list-group-item text-capitalize rounded'>
+                        <h2>Comments</h2>                            
                 <div className="row">               
                     {comments}               
                 </div>
-                </li>
+                        </li>
                 </div>  
                 <li className='list-group-item text-capitalize rounded'>  
                 <hr />
@@ -74,7 +73,7 @@ function showServices(data) {
                             </div>
                             <div className="form-group col-sm-2">
                                 <label htmlFor="service">I'm interested in {data.services.service}!</label>
-                                <input type="checkbox" id="event" name="service" className="form-control form-check-input" />
+                                <input type="checkbox" id="service" name="service" className="form-control form-check-input" />
                             </div>
                         </div>
                         <div className='text-center'>

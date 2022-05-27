@@ -58,6 +58,33 @@ router.put('/:id', (req, res) =>{
       })
 })
 
+//post comment to service
+router.post('/:id/comment', (req, res) => {
+  console.log('post comment', req.body)
+  if (req.body.author === '') { req.body.author = undefined }
+    req.body.service = req.body.service ? true : false
+    db.Service.findById(req.params.id)
+        .then(services => {
+            db.Servicecomment.create(req.body)
+                .then(comment => {
+                    services.comments.push(comment.id)
+                    services.save()
+                        .then(() => {
+                            res.redirect(`/services/${req.params.id}`)
+                        })
+                        .catch(err => {
+                            res.render('error404')
+                        })
+                })
+                .catch(err => {
+                    res.render('error404')
+                })
+        })
+        .catch(err => {
+            res.render('error404')
+        })
+})
+
 //DELETE service
 
 module.exports = router;
