@@ -8,7 +8,7 @@ async function seed() {
         let comment = await db.Servicecomment.create({
             author: 'Lazy Daisy',
             event: false,
-            stars: 5.0,
+            // stars: 5.0,
             content: "Count me in!"
         })
 

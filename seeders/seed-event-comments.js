@@ -8,7 +8,7 @@ async function seed() {
         let comment = await db.Eventcomment.create({
             author: 'Chatty Patty',
             event: false,
-            stars: 5.0,
+            // stars: 5.0,
             content: "Count me in!"
         })
 

@@ -12,7 +12,7 @@ function showServices(data) {
                     <h2 className='service'>{c.service ? `I'm interested in the service! 🥰 `  : 'Admirer! ❤️ ' }</h2>
                     <h4>{c.content}</h4>
                     <h3><strong>- {c.author}</strong></h3>
-                    <h4>Rating: {c.stars}</h4>
+                    {/* <h4>Rating: {c.stars}</h4> */}
                 </div>
             )
         })
@@ -23,7 +23,7 @@ function showServices(data) {
         <Def>
             <main>
                 <h1>Check out our service!</h1>
-                 <h2 style={{textAlign: 'center'}}>{data.services.service}!</h2> 
+                 <h2 style={{textAlign: 'center', textTransform: 'capitalize' }}>{data.services.service}!</h2> 
                  <div className="row">
                             <div className="form-group col-sm-6">
                             <li className='list-group-item text-capitalize rounded'>            
@@ -67,12 +67,12 @@ function showServices(data) {
                                 <label htmlFor="author">Author</label>
                                 <input id="author" name="author" className="form-control" />
                             </div>
-                            <div className="form-group col-sm-5">
+                            {/* <div className="form-group col-sm-5">
                                 <label htmlFor="stars">Star Rating</label>
                                 <input type="range" step="1.0" min="1" max="5" id="stars" name="stars" className="form-control" />
-                            </div>
+                            </div> */}
                             <div className="form-group col-sm-2">
-                                <label htmlFor="service">I'm interested in {data.services.service}!</label>
+                                <label htmlFor="service">I'm interested in {data.services.service} {data.services.name}!</label>
                                 <input type="checkbox" id="service" name="service" className="form-control form-check-input" />
                             </div>
                         </div>

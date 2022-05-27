@@ -26,7 +26,7 @@ db.Service.create([
       details: "Truman had a knee surgery a few months ago and needs a few sort walks a day to keep up with his rehab. I'm looking for someone to walk him twice during the weekdays as I am at work and can't get home to take him.",
       pic: "https://cdn.pixabay.com/photo/2018/05/10/10/35/great-dane-3387239_960_720.jpg"
     },{
-      service: "medication",
+      service: "medicating",
       animal_type: "cat",
       breed: "domestic short hair",
       gender: "male",

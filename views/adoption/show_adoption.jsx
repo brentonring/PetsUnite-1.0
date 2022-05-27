@@ -14,7 +14,7 @@ function showPet(data) {
                     <h2 className='adopt'>{c.adopt ? `I'm interested in adopting! 🥰 `  : 'Admirer! ❤️ ' }</h2>
                     <h4>{c.content}</h4>
                     <h3><strong>- {c.author}</strong></h3>
-                    <h4>Rating: {c.stars}</h4>
+                    {/* <h4>Rating: {c.stars}</h4> */}
                 </div>
             )
         })
@@ -23,10 +23,13 @@ function showPet(data) {
         <Def>
             <main>
                 <h1>I'M READY FOR MY NEW FAMILY!</h1>  
+                <div className='container'>
+                <img src={data.pets.pic} />
+                </div>
                 <div className="row">
                             <div className="form-group col-sm-6">
                             <li className='list-group-item  rounded'>
-                <img src={data.pets.pic} />
+                
                 </li>   
                 <li className='list-group-item  rounded'>
                 <h2>Hi! My Name Is {data.pets.name}</h2>
@@ -86,10 +89,10 @@ function showPet(data) {
                                 <label htmlFor="author">Author</label>
                                 <input id="author" name="author" className="form-control" />
                             </div>
-                            <div className="form-group col-sm-5">
+                            {/* <div className="form-group col-sm-5">
                                 <label htmlFor="stars">Star Rating</label>
                                 <input type="range" step="1.0" min="1" max="5" id="stars" name="stars" className="form-control" />
-                            </div>
+                            </div> */}
                             <div className="form-group col-sm-2">
                                 <label htmlFor="adopt">Apply to adopt {data.pets.name}!</label>
                                 <input type="checkbox" id="adopt" name="adopt" className="form-control form-check-input" />
