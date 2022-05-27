@@ -12,7 +12,7 @@ function newService () {
                     </div>
                     <div className='form-group col-sm-3'>
                         <label htmlFor='animal_type'>Type of Pet</label>
-                        <select style={{display: 'none'}} className='form-select' id='animal_type' name='animal_type'>
+                        <select className='form-select' id='animal_type' name='animal_type'>
                             <option>Dog</option>
                             <option>Cat</option>
                             <option>Bird</option> 

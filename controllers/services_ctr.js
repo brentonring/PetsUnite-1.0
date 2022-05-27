@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
 })
 
 //GET add service
-router.get ('/new', (req, res) => {
+router.get('/new', (req, res) => {
     res.render('services/new_services')
 })
 
@@ -43,7 +43,7 @@ router.post('/', (req, res) => {
 
 // Marisol - Waiting on updates to services seed data. Render code ready below.
 //GET show service
-router.get('/show', (req, res) => {
+router.get('/:id', (req, res) => {
 //   res.send("GET services/show_services")
   // res.render('services/show')
 // })
