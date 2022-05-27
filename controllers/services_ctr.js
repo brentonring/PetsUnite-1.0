@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
 })
 
 //GET add service
-router.get ('/new', (req, res) => {
+router.get('/new', (req, res) => {
     res.render('services/new_services')
 })
 
