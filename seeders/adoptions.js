@@ -56,7 +56,11 @@ db.Adoption.create([
       age_unit: "months",
       health_history: "mild skin condition",
       bio: "This adorable boy's favorite things are snuggling under blankets and taking leisurly strolls in the evening. Hotdog tends to get rashes and requires a grain-free diet that manages his skin issues well.",
+<<<<<<< HEAD
+      pic: "https://cdn.pixabay.com/photo/2016/07/15/15/55/dachshund-1519374_1280.jpg"
+=======
       pic: "https://cdn.pixabay.com/photo/2016/07/15/15/55/dachshund-1519374_960_720.jpg"
+>>>>>>> 138e3de6fd64a2d6e81f36b9670ff2036fdcbb60
     },{
       animal_type: "reptile",
       breed: "Bearded Dragon",
@@ -66,8 +70,13 @@ db.Adoption.create([
       age: 4,
       age_unit: "years",
       health_history: "missing some teeth",
+<<<<<<< HEAD
+      bio: "Toothless is a lazy lizard who's looking for an adventourous soul for a new compantion. He's mellow and easy to care for and loves crickets.",
+      pic: "https://cdn.pixabay.com/photo/2019/03/13/12/23/bearded-dragon-4052825_1280.jpg"
+=======
       bio: "Toothless is a lazy lizard who's looking for an adventourous soul for a new companion. He's mellow and easy to care for and loves crickets.",
       pic: "https://cdn.pixabay.com/photo/2019/03/13/12/23/bearded-dragon-4052825_960_720.jpg"
+>>>>>>> 138e3de6fd64a2d6e81f36b9670ff2036fdcbb60
     }
   ])
 
