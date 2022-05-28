@@ -8,7 +8,7 @@ async function seed() {
         let comment = await db.Comment.create({
             author: 'Chatty Patty',
             adopt: false,
-            stars: 5.0,
+            // stars: 5.0,
             content: "Wow, what a beautiful dog! We are interested in adopting!"
         })
 
