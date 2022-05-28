@@ -15,11 +15,11 @@ function newAdoption () {
                     <div className='form-group col-sm-6'>
                         <label htmlFor='animal_type'>Type of Pet</label>
                         <select className='form-select' id='animal_type' name='animal_type'>
-                            <option></option>
+                            {/* <option></option> */}
                             <option>Dog</option>
                             <option>Cat</option>
                             <option>Bird</option> 
-                            <option>Rodent</option> {/* ADD FUNCTIONALITY TO THESE */}
+                            <option>Rodent</option>
                             <option>Reptile</option>
                             <option>Fish</option>
                             <option>Other</option>
@@ -41,15 +41,23 @@ function newAdoption () {
                         <label htmlFor='color'>Color</label>
                         <input className='form-control' id='color' name='color'/>
                     </div>
-                    <div className='form-group col-sm-4'>
+                    <div className='form-group col-sm-3'>
                         <label htmlFor='age'>Age</label>
-                        <input className='form-control' id='age' name='age'/> {/* change to number for age then dropdown for months/years */}
+                        <input className='form-control' type='number' id='age' name='age'/> {/* change to number for age then dropdown for months/years */}
                     </div>
-                    <div className='form-group col-sm-4'>
+                    <div className='form-group col-sm-3'>
+                        <label htmlFor='age_unit'>Unit</label>
+                        <select className='form-select' id='age_unit' name='age_unit'>
+                            <option value='years'>Years</option>
+                            <option value='months'>Months</option>
+                            <option value='weeks'>Weeks</option>
+                        </select>
+                    </div>
+                    <div className='form-group col-sm-3'>
                         <label htmlFor='health_history'>Health History</label>
                         <input className='form-control' id='health_history' name='health_history'/>
                     </div>
-                    <div className='form-group col-sm-4'>
+                    <div className='form-group col-sm-3'>
                         <label htmlFor='pic'>Picture</label>
                         <input className='form-control' id='pic' name='pic'/>
                     </div>

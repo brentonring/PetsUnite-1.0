@@ -12,6 +12,10 @@ const eventSchema = new mongoose.Schema({
     state: String,
     event_details: String,
     pic: {type: String, default: 'https://cdn.pixabay.com/photo/2020/10/06/11/50/dog-5632005__340.jpg'},
+    comments: [{ 
+        type: mongoose.Schema.Types.ObjectId, 
+        ref: 'Eventcomment' 
+    }],
 })
 
 //exporting Event database
