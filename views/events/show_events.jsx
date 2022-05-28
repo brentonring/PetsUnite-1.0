@@ -34,6 +34,7 @@ function showEvents(data) {
                                 <h2>{data.events.event_name}</h2>
                                 <p style={{textTransform: 'none'}}>{data.events.event_details}</p>
                             </li>
+
                             <li className='list-group-item text-capitalize rounded'>
                                 <img id="icons" src="/images/icons/icon_date32.png"/>{data.events.date}, from {data.events.start_time}-{data.events.end_time}
                             </li>
@@ -85,6 +86,7 @@ function showEvents(data) {
                         </li>
                     </div>
                 </div>
+
             </main>
         </Def>
     )

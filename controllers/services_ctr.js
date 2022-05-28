@@ -20,6 +20,26 @@ router.get('/new', (req, res) => {
 })
 
 //POST add service
+router.post('/', (req, res) => {
+  db.Service.create(req.body)
+    .then(() => {
+      res.redirect('/services');
+    })
+    .catch(err => {
+      if(err && err.name === 'ValidationError'){
+        let message = "Validation Error: "
+        for(var field in err.errors){
+          message+= `${field} was ${err.errors[field].value}.`
+          message+= `${err.errors[field].message}`
+        }
+        console.log('Validation error message', message)
+        res.render('services/new_services', {message})
+      }
+      else{
+        res.render('error404');
+      }
+    })
+})
 
 
 //GET show service
@@ -86,5 +106,9 @@ router.post('/:id/comment', (req, res) => {
 })
 
 //DELETE service
+router.delete('/:id', async (req, res) => {
+  let deletedService = await db.Service.findByIdAndDelete(req.params.id)
+  res.status(303).redirect('/services')
+})
 
 module.exports = router;
