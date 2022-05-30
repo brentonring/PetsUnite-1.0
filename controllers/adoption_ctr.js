@@ -19,6 +19,12 @@ router.get ('/new', (req, res) => {
     res.render('adoption/new_adoption')
 })
 
+//DELETE pet adoption
+router.delete('/:id', async (req, res) => {
+  let deletedAdoption = await db.Adoption.findByIdAndDelete(req.params.id)
+  res.status(303).redirect('/adoption')
+});
+
 //POST add pet adoption
 router.post('/', (req, res) => {
   db.Adoption.create(req.body)
@@ -32,7 +38,7 @@ router.post('/', (req, res) => {
           message+= `${field} was ${err.errors[field].value}.`
           message+= `${err.errors[field].message}`
         }
-        console.log('Validation errore message', message)
+        console.log('Validation error message', message)
         res.render('adoption/new_adoption', {message})
       }
       else{
@@ -58,8 +64,10 @@ router.get('/:id', (req, res) => {
 //GET edit pet adoption
 router.get('/:id/edit', (req, res) => {
   db.Adoption.findById(req.params.id)
-    .then(pets => {
-      res.render('adoption/edit_adoption', {pets})
+    .then(foundPet => {
+      res.render('adoption/edit_adoption', {
+        pet: foundPet
+      })
     })
     .catch(err => {
       res.render('error404')
@@ -102,9 +110,7 @@ router.post('/:id/comment', (req, res) => {
         .catch(err => {
             res.render('error404')
         })
-})
-
-//DELETE pet adoption
+});
 
 
 module.exports = router;

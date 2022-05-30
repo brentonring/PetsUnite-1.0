@@ -60,7 +60,7 @@ router.put('/:id', (req, res) =>{
       })
 })
 
-//post comment to place
+//post comment to events
 router.post('/:id/comment', (req, res) => {
   console.log('post comment', req.body)
   if (req.body.author === '') { req.body.author = undefined }
@@ -88,5 +88,9 @@ router.post('/:id/comment', (req, res) => {
 })
 
 //DELETE events
+router.delete('/:id', async (req, res) => {
+  let deletedEvent = await db.Event.findByIdAndDelete(req.params.id)
+  res.status(303).redirect('/events')
+})
 
 module.exports = router;
