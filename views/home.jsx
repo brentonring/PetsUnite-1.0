@@ -24,7 +24,7 @@ function Home (){
                     <div id="home-content">
                         <h2>Welcome to PetsUnite!</h2>
                         <p>A social media space to socialize and explore different pets to adopt, meet other pet anothers at events,
-                            and connect to services for you precious pets. Add, edit and explore the differet options at PetsUnite!
+                            and connect to services for you precious pets. Add, edit and explore the different options at PetsUnite!
                         </p>
                     </div>
                     <div>

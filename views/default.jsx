@@ -11,7 +11,7 @@ function Def (html) {
                 <link rel="stylesheet" href="/css/style.css"></link>
                 <link rel="shortcut icon" type="image/jpg" href="/images/favicon/green_house_favicon.ico"></link>
                 <link rel="preconnect" href="https://fonts.googleapis.com"></link>
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
+                <link rel="preconnect" href="https://fonts.gstatic.com"></link>
                 <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Montserrat:wght@300&display=swap" rel="stylesheet"></link>
             </head>
             <body>
@@ -38,7 +38,7 @@ function Def (html) {
                                     <a className="nav-link mx-3" href="/events">Events</a>
                                 </li>
                             </ul>
-                            <form className="form-inline mt-2 mx-2 mt-md-0" class="nav-btn" method="GET" action={`/login`}>
+                            <form className="form-inline mt-2 mx-2 mt-md-0" method="GET" action={`/login`}>
                                 <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
                             </form>
                             <form className="form-inline mt-2 mx-2 mt-md-0" method="GET" action={`/register`}>
