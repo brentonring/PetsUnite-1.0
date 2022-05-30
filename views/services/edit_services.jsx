@@ -34,7 +34,7 @@ function editService({service}) {
                         </div>
                         <div className='form-group col-sm-3'>
                             <label htmlFor='age'>Age</label>
-                            <input className='form-control' id='age' name='age' defaultValue={service.age}/>
+                            <input className='form-control' type='number' id='age' name='age' defaultValue={service.age}/>
                         </div>
                         <div className='form-group col-sm-3'>
                             <label htmlFor='age_unit'>Unit</label>
