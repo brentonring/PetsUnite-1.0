@@ -58,8 +58,8 @@ router.get('/:id', (req, res) => {
 //GET edit events
 router.get('/:id/edit', (req, res) => {
     db.Event.findById(req.params.id)
-      .then(events => {
-        res.render('events/edit_events', {events})
+      .then(event => {
+        res.render('events/edit_events', {event})
       })
       .catch(err => {
         res.render('error404')

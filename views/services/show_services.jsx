@@ -20,7 +20,7 @@ function showServices(data) {
     return (
         <Def>
             <main>
-                <h1>Check out our service!</h1>
+                <h1>Check Out This Service!</h1>
                 <li className='list-group-item text-capitalize rounded'>            
                 <img src={data.services.pic} />
                 </li>

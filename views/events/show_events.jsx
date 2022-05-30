@@ -21,7 +21,7 @@ function showEvents(data) {
     return (
         <Def>
             <main>
-                <h1>Check out the event!</h1>
+                <h1>Check Out This Event!</h1>
                     <div className='container'>
                         <li className='list-group-item text-capitalize rounded'>
                             <img style={{marginTop: 10, marginBottom: 10, borderRadius: 10}}src={data.events.pic} />

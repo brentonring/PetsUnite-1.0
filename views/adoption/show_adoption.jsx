@@ -21,7 +21,7 @@ function showPet(data) {
     return (
         <Def>
             <main>
-                <h1>I'm ready for my new family!</h1>  
+                <h1>I'm Ready for My New Family!</h1>  
                 <div className='container'>
                     <li className='list-group-item text-capitalize rounded'>
                         <img style={{marginTop: 10, marginBottom: 10, borderRadius: 10}} src={data.pets.pic} />
