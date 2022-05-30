@@ -12,7 +12,7 @@ db.Service.create([
       age: 3 , //number
       age_unit: "years", //string
       health_history: "none",
-      details: "I'm looking for someone willing to stop in and feed my pet Draco. I will be out of town for 2 weeks and need him to be given a meal only once. WARNING: This involves feeding him thawed, dead mouse.",
+      details: "I'm looking for someone willing to stop in and feed my pet Draco. I will be out of town for 2 weeks and need him to be given a meal only once. WARNING: This involves feeding him a thawed, dead mouse.",
       pic: "https://cdn.pixabay.com/photo/2018/03/22/00/43/corn-snake-3248897_1280.jpg"
     },{
       service: "walking",
@@ -23,10 +23,10 @@ db.Service.create([
       age: 6,
       age_unit: "years",
       health_history: "food allergies",
-      details: "Truman had a knee surgery a few months ago and needs a few sort walks a day to keep up with his rehab. I'm looking for someone to walk him twice during the weekdays as I am at work and can't get home to take him.",
+      details: "Truman had knee surgery a few months ago and needs a few sort walks a day to keep up with his rehab. I'm looking for someone to walk him twice during the weekdays as I am at work and can't get home to take him.",
       pic: "https://cdn.pixabay.com/photo/2018/05/10/10/35/great-dane-3387239_960_720.jpg"
     },{
-      service: "medication",
+      service: "medicating",
       animal_type: "cat",
       breed: "domestic short hair",
       gender: "male",
@@ -34,7 +34,7 @@ db.Service.create([
       age: 14,
       age_unit: "years",
       health_history: "diabetes",
-      details: "I'm looking for someone to stay with my cat for the weekend. He needs someone to stay with will most of the time and who can give him shots of insulin every 12 hours. He is a sweet, gentle old man and would love to snuggle!",
+      details: "I'm looking for someone to stay with my cat for the weekend. He needs someone to stay with most of the time and who can give him shots of insulin every 12 hours. He is a sweet, gentle old man and would love to snuggle!",
       pic: "https://cdn.pixabay.com/photo/2017/05/19/23/54/cat-2327899_960_720.jpg"
     },{
       service: "pet sitting",
@@ -45,7 +45,7 @@ db.Service.create([
       age: 7,
       age_unit: "months",
       health_history: "none",
-      details: "Connie would LOVE to stay with you for a week next month if you'll have her! She is very sweet with people but doesn't get along with other dogs which is why I'm chosing to not have her stay at a gog spa while I'm away.",
+      details: "Connie would LOVE to stay with you for a week next month if you'll have her! She is very sweet with people but doesn't get along with other dogs which is why I'm chosing to not have her stay at a dog spa while I'm away.",
       pic: "https://cdn.pixabay.com/photo/2016/05/09/10/42/weimaraner-1381186_960_720.jpg"
     },{
       service: "grooming",

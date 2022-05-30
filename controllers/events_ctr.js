@@ -26,7 +26,9 @@ router.get ('/new', (req, res) => {
 //GET show events
 router.get('/:id', (req, res) => {    
   db.Event.findById(req.params.id)
+  .populate('comments')
   .then(events => {
+    console.log(events.comments)
     res.render('events/show_events', {events});
   })
   .catch(err => {
@@ -58,6 +60,37 @@ router.put('/:id', (req, res) =>{
       })
 })
 
+//post comment to events
+router.post('/:id/comment', (req, res) => {
+  console.log('post comment', req.body)
+  if (req.body.author === '') { req.body.author = undefined }
+    req.body.event = req.body.event ? true : false
+    db.Event.findById(req.params.id)
+        .then(events => {
+            db.Eventcomment.create(req.body)
+                .then(comment => {
+                    events.comments.push(comment.id)
+                    events.save()
+                        .then(() => {
+                            res.redirect(`/events/${req.params.id}`)
+                        })
+                        .catch(err => {
+                            res.render('error404')
+                        })
+                })
+                .catch(err => {
+                    res.render('error404')
+                })
+        })
+        .catch(err => {
+            res.render('error404')
+        })
+})
+
 //DELETE events
+router.delete('/:id', async (req, res) => {
+  let deletedEvent = await db.Event.findByIdAndDelete(req.params.id)
+  res.status(303).redirect('/events')
+})
 
 module.exports = router;
