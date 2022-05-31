@@ -32,7 +32,7 @@ router.post('/', (req, res) => {
           message+= `${field} was ${err.errors[field].value}.`
           message+= `${err.errors[field].message}`
         }
-        console.log('Validation errore message', message)
+        console.log('Validation error message', message)
         res.render('adoption/new_adoption', {message})
       }
       else{
@@ -40,7 +40,6 @@ router.post('/', (req, res) => {
       }
     })
 })
-
 
 //GET show pet adoption
 router.get('/:id', (req, res) => {    
@@ -54,12 +53,13 @@ router.get('/:id', (req, res) => {
     })
 })
 
-
 //GET edit pet adoption
 router.get('/:id/edit', (req, res) => {
   db.Adoption.findById(req.params.id)
-    .then(pets => {
-      res.render('adoption/edit_adoption', {pets})
+    .then(foundPet => {
+      res.render('adoption/edit_adoption', {
+        pet: foundPet
+      })
     })
     .catch(err => {
       res.render('error404')
@@ -81,7 +81,7 @@ router.put('/:id', (req, res) =>{
 router.post('/:id/comment', (req, res) => {
   console.log('post comment', req.body)
   if (req.body.author === '') { req.body.author = undefined }
-    req.body.rant = req.body.rant ? true : false
+    req.body.adopt = req.body.adopt ? true : false
     db.Adoption.findById(req.params.id)
         .then(pets => {
             db.Comment.create(req.body)
@@ -102,9 +102,12 @@ router.post('/:id/comment', (req, res) => {
         .catch(err => {
             res.render('error404')
         })
-})
+});
 
 //DELETE pet adoption
-
+router.delete('/:id', async (req, res) => {
+  let deletedAdoption = await db.Adoption.findByIdAndDelete(req.params.id)
+  res.status(303).redirect('/adoption')
+});
 
 module.exports = router;
