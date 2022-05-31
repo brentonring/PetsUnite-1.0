@@ -85,7 +85,7 @@ router.post('/:id/comment', (req, res) => {
     req.body.service = req.body.service ? true : false
     db.Service.findById(req.params.id)
         .then(services => {
-            db.Servicecomment.create(req.body)
+            db.ServiceComment.create(req.body)
                 .then(comment => {
                     services.comments.push(comment.id)
                     services.save()
@@ -109,6 +109,18 @@ router.post('/:id/comment', (req, res) => {
 router.delete('/:id', async (req, res) => {
   let deletedService = await db.Service.findByIdAndDelete(req.params.id)
   res.status(303).redirect('/services')
+})
+
+//DELETE comment from pet adoption
+router.delete('/:id/comment/:commentId', (req, res) => {
+  db.ServiceComment.findByIdAndDelete(req.params.commentId)
+        .then(() => {
+            console.log('Success')
+            res.redirect(`/services/${req.params.id}`)
+        })
+        .catch(err => {
+            res.render('error404')
+        })
 })
 
 module.exports = router;

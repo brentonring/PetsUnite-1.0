@@ -14,7 +14,7 @@ const serviceSchema = new mongoose.Schema({
     pic: {type: String, default: 'https://cdn.pixabay.com/photo/2017/12/25/11/32/cat-3038243__340.jpg'},
     comments: [{ 
         type: mongoose.Schema.Types.ObjectId, 
-        ref: 'Servicecomment' 
+        ref: 'ServiceComment' 
     }],
 });
 

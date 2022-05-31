@@ -1,6 +1,6 @@
 const db = require('../models');
 
-async function seed() {
+async function seedServiceComment() {
     try {
         let service = await db.Service.findOne({ service: 'feeding' })
     
@@ -8,7 +8,6 @@ async function seed() {
         let comment = await db.Servicecomment.create({
             author: 'Lazy Daisy',
             event: false,
-            // stars: 5.0,
             content: "Count me in!"
         })
 
@@ -20,10 +19,11 @@ async function seed() {
 
         // exit the program
         process.exit()
-    } catch(err) {
+    } 
+    catch(err) {
         console.log(err)
     }
 
 };
 
-seed()
+seedServiceComment();
