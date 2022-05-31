@@ -84,7 +84,7 @@ router.post('/:id/comment', (req, res) => {
     req.body.event = req.body.event ? true : false
     db.Event.findById(req.params.id)
         .then(events => {
-            db.Eventcomment.create(req.body)
+            db.EventComment.create(req.body)
                 .then(comment => {
                     events.comments.push(comment.id)
                     events.save()
@@ -108,6 +108,18 @@ router.post('/:id/comment', (req, res) => {
 router.delete('/:id', async (req, res) => {
   let deletedEvent = await db.Event.findByIdAndDelete(req.params.id)
   res.status(303).redirect('/events')
+})
+
+//DELETE comment from pet adoption
+router.delete('/:id/comment/:commentId', (req, res) => {
+  db.EventComment.findByIdAndDelete(req.params.commentId)
+        .then(() => {
+            console.log('Success')
+            res.redirect(`/events/${req.params.id}`)
+        })
+        .catch(err => {
+            res.render('error404')
+        })
 })
 
 module.exports = router;

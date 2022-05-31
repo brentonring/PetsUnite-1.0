@@ -1,6 +1,6 @@
 const db = require('../models');
 
-async function seed() {
+async function seedEventComment() {
     try {
         let event = await db.Event.findOne({ event_name: 'Doggie Play Date' })
     
@@ -8,7 +8,6 @@ async function seed() {
         let comment = await db.Eventcomment.create({
             author: 'Chatty Patty',
             event: false,
-            // stars: 5.0,
             content: "Count me in!"
         })
 
@@ -20,10 +19,11 @@ async function seed() {
 
         // exit the program
         process.exit()
-    } catch(err) {
+    } 
+    catch(err) {
         console.log(err)
     }
 
 };
 
-seed()
+seedEventComment();
