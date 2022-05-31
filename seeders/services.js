@@ -13,7 +13,7 @@ db.Service.create([
       age_unit: "years", //string
       health_history: "none",
       details: "I'm looking for someone willing to stop in and feed my pet Draco. I will be out of town for 2 weeks and need him to be given a meal only once. WARNING: This involves feeding him a thawed, dead mouse.",
-      pic: "https://cdn.pixabay.com/photo/2018/03/22/00/43/corn-snake-3248897_1280.jpg"
+      pic: "https://cdn.pixabay.com/photo/2018/03/19/01/13/corn-snake-3238782_960_720.jpg"
     },{
       service: "walking",
       animal_type: "dog",
@@ -68,7 +68,7 @@ db.Service.create([
       age_unit: "years",
       health_history: "none",
       details: "Looking for a extra set of hands to help me groom my beautiful Andrea. Mainly with trimming her nails. I'd prefer only people who have handled birds reply. Thank you.",
-      pic: "https://cdn.pixabay.com/photo/2013/11/03/03/08/budgerigar-parakeet-204706_960_720.jpg"
+      pic: "https://cdn.pixabay.com/photo/2017/04/04/12/28/budgie-2201256_960_720.jpg"
     }
 ])
 
