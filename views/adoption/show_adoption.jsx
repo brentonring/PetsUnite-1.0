@@ -23,8 +23,8 @@ function showPet(data) {
         <Def>
             <main>
                 <h1>I'm ready for my new home!</h1>                
-                    <img src={data.pets.pic} />
-                <h2>Hi! My Name Is {data.pets.name}</h2>
+                    <img className='show-img' src={data.pets.pic} />
+                <h2 className='show-intro'>Hi! My Name Is {data.pets.name}</h2>
                 <h3>I'm Available</h3>                
                     <li className='list-group-item text-capitalize rounded'>
                         <img id="icons" src="/images/icons/icon_bread32.png"></img>{data.pets.breed}
@@ -78,6 +78,5 @@ function showPet(data) {
     )
 
 }
-
 
 module.exports = showPet;

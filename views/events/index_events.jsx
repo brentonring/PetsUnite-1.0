@@ -13,7 +13,7 @@ function indexEvents (data) {
                         <a className= "text-decoration-none" href={`/events/${event.id}`}><img className="rounded mx-auto d-block" src={event.pic} alt={event.event_name}></img></a>
                         <ul className= "row mx-auto d-block">
                             <li className='list-group-item text-capitalize rounded'>
-                                <img id="icons" src="/images/icons/icon_date32.png"></img>{event.date}, {event.start_time} - {event.end_time}
+                                <img class="col-md-4 col-sm-4" id="icons" src="/images/icons/icon_date32.png"></img>{event.date}, {event.start_time} - {event.end_time}
                             </li>
                             <li className='list-group-item text-capitalize rounded'>
                                 <img id="icons" src="/images/icons/icon_location32.png"></img>{event.location}, {event.city}

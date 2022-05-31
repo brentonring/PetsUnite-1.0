@@ -11,7 +11,8 @@ function indexAdoption (data) {
                         <h2 className="text-center">
                             <a className= "text-decoration-none" href={`/adoption/${pet.id}`}> {pet.name} </a>
                         </h2>
-                        <a className= "text-decoration-none" href={`/adoption/${pet.id}`}><img className="rounded mx-auto d-block" src={pet.pic} alt={pet.name}></img></a>
+                        <a className= "text-decoration-none" href={`/adoption/${pet.id}`}>
+                            <img className="rounded mx-auto d-block index-img" src={pet.pic} alt={pet.name}></img></a>
                             <ul className='row mx-auto d-block'>
                                 <li className='list-group-item text-capitalize rounded'>
                                     <img id="icons" src="/images/icons/icon_bread32.png"></img>{pet.breed}

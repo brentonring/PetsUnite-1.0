@@ -126,6 +126,7 @@ img{
     width: 100%;
     height: auto;  
 }
+
 #card{
     border: 1px solid lightgray;
     border-radius: 2%;
@@ -189,6 +190,11 @@ form {
 .form-group{
     display: inline-block;
     padding: 1em;
+}
+/* SHOW PAGES */
+.show-intro {
+    color: var(--palette-brown);
+    margin-bottom: 1em;
 }
 
 /* FOOTER */
