@@ -14,14 +14,32 @@ router.get('/', (req, res) => {
       })
 })
 
-
 //GET add events
 router.get ('/new', (req, res) => {
     res.render('events/new_events')
 })
 
 //POST add events
-
+router.post('/', (req, res) => {
+  db.Event.create(req.body)
+    .then(() => {
+      res.redirect('/events');
+    })
+    .catch(err => {
+      if(err && err.name === 'ValidationError'){
+        let message = "Validation Error: "
+        for(var field in err.errors){
+          message+= `${field} was ${err.errors[field].value}.`
+          message+= `${err.errors[field].message}`
+        }
+        console.log('Validation error message', message)
+        res.render('services/new_events', {message})
+      }
+      else{
+        res.render('error404');
+      }
+    })
+})
 
 //GET show events
 router.get('/:id', (req, res) => {    
@@ -37,12 +55,11 @@ router.get('/:id', (req, res) => {
   })
 })
 
-
 //GET edit events
 router.get('/:id/edit', (req, res) => {
     db.Event.findById(req.params.id)
-      .then(events => {
-        res.render('events/edit_events', {events})
+      .then(event => {
+        res.render('events/edit_events', {event})
       })
       .catch(err => {
         res.render('error404')
@@ -60,7 +77,7 @@ router.put('/:id', (req, res) =>{
       })
 })
 
-//post comment to events
+//POST comment to events
 router.post('/:id/comment', (req, res) => {
   console.log('post comment', req.body)
   if (req.body.author === '') { req.body.author = undefined }

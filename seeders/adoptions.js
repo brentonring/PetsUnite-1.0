@@ -34,7 +34,7 @@ db.Adoption.create([
       age_unit: "months",
       health_history: "none",
       bio: "Walter is a sweet and shy boy! He also VERY smart! He knows how to sit and is working on lay down. The sky is the limit for this boy in his new home!",
-      pic: "https://cdn.pixabay.com/photo/2016/02/18/18/37/puppy-1207816_960_720.jpg"
+      pic: "https://cdn.pixabay.com/photo/2017/05/06/04/45/golden-retriever-2288933_960_720.jpg"
     },{
       animal_type: "dog",
       breed: "Golden Retreiver",
@@ -56,7 +56,7 @@ db.Adoption.create([
       age_unit: "months",
       health_history: "mild skin condition",
       bio: "This adorable boy's favorite things are snuggling under blankets and taking leisurly strolls in the evening. Hotdog tends to get rashes and requires a grain-free diet that manages his skin issues well.",
-      pic: "https://cdn.pixabay.com/photo/2016/07/15/15/55/dachshund-1519374_960_720.jpg"
+      pic: "https://cdn.pixabay.com/photo/2012/02/24/16/59/long-hair-16746_960_720.jpg"
     },{
       animal_type: "reptile",
       breed: "Bearded Dragon",
@@ -68,7 +68,40 @@ db.Adoption.create([
       health_history: "missing some teeth",
       bio: "Toothless is a lazy lizard who's looking for an adventourous soul for a new companion. He's mellow and easy to care for and loves crickets.",
       pic: "https://cdn.pixabay.com/photo/2019/03/13/12/23/bearded-dragon-4052825_960_720.jpg"
-    }
+    },{
+      animal_type: "Cat",
+      breed: "Shorthair",
+      color: "Blue",
+      gender: "Female",
+      name: "Sour",
+      age: 8,
+      age_unit: "years",
+      health_history: "Diabetes",
+      bio: "Sour can be grumpy at times so don't be too shocked if she ignores you for half the day, but she makes it up with cuddles and cat massages.",
+      pic: "https://cdn.pixabay.com/photo/2017/07/26/19/25/grey-2542867_960_720.jpg"
+    },{
+      animal_type: "Pig",
+      breed: "Potbelly Pig",
+      color: "Pink & Black",
+      gender: "Female",
+      name: "Apple",
+      age: 6,
+      age_unit: "weeks",
+      health_history: "Hungry",
+      bio: "Apple was recently born and looking for her forever home. She loves snuggles and is always hungry!",
+      pic: "https://cdn.pixabay.com/photo/2018/10/12/10/30/piglet-3741877_960_720.jpg"
+    },{
+      animal_type: "Rodent",
+      breed: "Mouse",
+      color: "Gray",
+      gender: "Male",
+      name: "Moo",
+      age: 6,
+      age_unit: "months",
+      health_history: "none",
+      bio: "Moo is a perfect low maintenance pet. He loves to run, sleep and eat cheese all day.",
+      pic: "https://cdn.pixabay.com/photo/2022/02/21/21/18/animal-7027637_960_720.jpg"
+    },
   ])
 
 .then(() => {

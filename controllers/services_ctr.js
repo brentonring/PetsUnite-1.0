@@ -59,8 +59,8 @@ router.get('/:id', (req, res) => {
 //GET edit service
 router.get('/:id/edit', (req, res) => {
     db.Service.findById(req.params.id)
-      .then(services => {
-        res.render('services/edit_services', {services})
+      .then(service => {
+        res.render('services/edit_services', {service})
       })
       .catch(err => {
         res.render('error404')

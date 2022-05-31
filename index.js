@@ -1,7 +1,6 @@
 // Modules and Globals
 require("dotenv").config();
 const express = require("express");
-// const methodOverride = require("method-override");
 const app = express();
 const methodOverride = require("method-override");
 const PORT = process.env.PORT; //PORT 3500
@@ -21,13 +20,11 @@ app.use("/services", require("./controllers/services_ctr"));
 
 // Homepage route
 app.get("/", (req, res) => {
-  // res.send("<h1>Hello World!</h1>");
   res.render("home");
 });
 
 // Wildcard Error Page
 app.get("*", (req, res) => {
-  // res.send(`<h1>404 Page, Oops, this page doesn't exist</h1>`);
   res.render("error404");
 });
 

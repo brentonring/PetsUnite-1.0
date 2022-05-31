@@ -19,12 +19,6 @@ router.get ('/new', (req, res) => {
     res.render('adoption/new_adoption')
 })
 
-//DELETE pet adoption
-router.delete('/:id', async (req, res) => {
-  let deletedAdoption = await db.Adoption.findByIdAndDelete(req.params.id)
-  res.status(303).redirect('/adoption')
-});
-
 //POST add pet adoption
 router.post('/', (req, res) => {
   db.Adoption.create(req.body)
@@ -47,7 +41,6 @@ router.post('/', (req, res) => {
     })
 })
 
-
 //GET show pet adoption
 router.get('/:id', (req, res) => {    
     db.Adoption.findById(req.params.id)
@@ -59,7 +52,6 @@ router.get('/:id', (req, res) => {
       res.render('error404');
     })
 })
-
 
 //GET edit pet adoption
 router.get('/:id/edit', (req, res) => {
@@ -112,5 +104,10 @@ router.post('/:id/comment', (req, res) => {
         })
 });
 
+//DELETE pet adoption
+router.delete('/:id', async (req, res) => {
+  let deletedAdoption = await db.Adoption.findByIdAndDelete(req.params.id)
+  res.status(303).redirect('/adoption')
+});
 
 module.exports = router;

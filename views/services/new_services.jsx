@@ -4,8 +4,8 @@ const Def = require('../default')
 function newService () {
     return (
         <Def>
-            <main>
-                <h1>Unite Your Pet with People Who Want to Help</h1>
+            <main id="main-container">
+            <h1 style={{textAlign: 'center'}}>Unite Your Pet with People Who Want to Help</h1>
                 <form method='POST' action='/services'>
                     <div className='form-group row'>
                         <label className='col-sm-2 col-form-label' htmlFor='service'>Service</label>
