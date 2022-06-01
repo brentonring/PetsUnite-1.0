@@ -39,19 +39,29 @@ function newAdoption () {
                                     </select>
                             </div>
                         </div>
-                        <div className='form-group'>
-                            <label className='col-form-label' htmlFor='color'>Color</label>
-                            <input className='form-control' id='color' name='color'/>
+                        <div className='row'>
+                            <div className='form-group col-sm-6'>
+                                <label className='col-form-label' htmlFor='color'>Color</label>
+                                <input className='form-control' id='color' name='color'/>
+                            </div>
+                            <div className='form-group col-sm-6'>
+                                <label className='col-form-label' htmlFor='pic'>Picture</label>
+                                <input className='form-control' id='pic' name='pic'/>
+                            </div>
                         </div>
-                        <div className='form-group'>
-                            <label className='col-form-label' htmlFor='age'>Age</label>
-                            <input className='form-control' type='number' id='age' name='age' min='1' />
-                            <label className='col-form-label' htmlFor='age_unit'></label>
-                            <select className='form-select' id='age_unit' name='age_unit'>
-                                <option value='years'>Years</option>
-                                <option value='months'>Months</option>
-                                <option value='weeks'>Weeks</option>
-                            </select>
+                        <div className='row'>
+                            <div className='form-group col-sm-6'>
+                                <label className='col-form-label' htmlFor='age'>Age</label>
+                                <input className='form-control' type='number' id='age' name='age' min='1' />
+                            </div>
+                            <div className='form-group col-sm-6'>
+                                <label className='col-form-label' htmlFor='age_unit'>Age Unit</label>
+                                <select className='form-select' id='age_unit' name='age_unit'>
+                                    <option value='years'>Years</option>
+                                    <option value='months'>Months</option>
+                                    <option value='weeks'>Weeks</option>
+                                </select>
+                            </div>
                         </div>
                         <div className='form-group'>
                             <label className='col-form-label' htmlFor='bio'>Bio</label>
@@ -60,10 +70,6 @@ function newAdoption () {
                         <div className='form-group'>
                             <label className='col-form-label' htmlFor='health_history'>Health History</label>
                             <textarea className='form-control' id='health_history' name='health_history'/>
-                        </div>
-                        <div className='form-group'>
-                            <label className='col-form-label' htmlFor='pic'>Picture</label>
-                            <input className='form-control' id='pic' name='pic'/>
                         </div>
                         <div className='text-center'>
                             <input className='btn btn-primary' type='submit' value='Add Pet' />

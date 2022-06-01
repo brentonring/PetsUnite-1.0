@@ -8,88 +8,42 @@ function newEvent () {
                 <h1 style={{textAlign: 'center'}}>Unite Pet Lovers with Your Event</h1>
                 <div>
                     <form method='POST' action="/events">
-                        <div className='form-group'>
-                            <label className='col-form-label' htmlFor='event_name'>Event Name</label>
-                            <input className='form-control' id='event_name' name='event_name'/>
+                        <div className='row'>
+                            <div className='form-group col-sm-6'>
+                                <label className='col-form-label' htmlFor='event_name'>Event Name</label>
+                                <input className='form-control' id='event_name' name='event_name'/>
+                            </div>
+                            <div className='form-group col-sm-6'>
+                                <label className='col-form-label' htmlFor='date'>Date</label>
+                                <input className='form-control' id='date' name='date' placeholder='mm/dd/yyyy'/>
+                            </div>
                         </div>
-                        <div className='form-group'>
-                            <label className='col-form-label' htmlFor='date'>Date</label>
-                            <input className='form-control' id='date' name='date' placeholder='mm/dd/yyyy'/>
-                        </div>
-                        <div className='form-group row'>
+                        <div className='row'>
                             <div className='form-group col-sm-6'>
                                 <label className='col-form-label' htmlFor='start_time'>Start Time</label>
-                                <select className='form-select' id='start_time' name='start_time'>
-                                    <option>12:00am</option>
-                                    <option>1:00am</option>
-                                    <option>2:00am</option>
-                                    <option>3:00am</option> 
-                                    <option>4:00am</option> 
-                                    <option>5:00am</option>
-                                    <option>6:00am</option>
-                                    <option>7:00am</option>
-                                    <option>8:00am</option>
-                                    <option>9:00am</option>
-                                    <option>10:00am</option>
-                                    <option>11:00am</option>
-                                    <option>12:00pm</option>
-                                    <option>1:00pm</option>
-                                    <option>2:00pm</option>
-                                    <option>3:00pm</option> 
-                                    <option>4:00pm</option> 
-                                    <option>5:00pm</option>
-                                    <option>6:00pm</option>
-                                    <option>7:00pm</option>
-                                    <option>8:00pm</option>
-                                    <option>9:00pm</option>
-                                    <option>10:00pm</option>
-                                    <option>11:00pm</option>
-                                </select>
+                                <input className='form-control' id='start_time' name='start_time'/>
                             </div>
                             <div className='form-group col-sm-6'>
                                 <label className='col-form-label' htmlFor='end_time'>End Time</label>
-                                <select className='form-select' id='end_time' name='end_time'>
-                                    <option>12:00am</option>
-                                    <option>1:00am</option>
-                                    <option>2:00am</option>
-                                    <option>3:00am</option> 
-                                    <option>4:00am</option> 
-                                    <option>5:00am</option>
-                                    <option>6:00am</option>
-                                    <option>7:00am</option>
-                                    <option>8:00am</option>
-                                    <option>9:00am</option>
-                                    <option>10:00am</option>
-                                    <option>11:00am</option>
-                                    <option>12:00pm</option>
-                                    <option>1:00pm</option>
-                                    <option>2:00pm</option>
-                                    <option>3:00pm</option> 
-                                    <option>4:00pm</option> 
-                                    <option>5:00pm</option>
-                                    <option>6:00pm</option>
-                                    <option>7:00pm</option>
-                                    <option>8:00pm</option>
-                                    <option>9:00pm</option>
-                                    <option>10:00pm</option>
-                                    <option>11:00pm</option>
-                                </select>
+                                <input className='form-control' id='end_time' name='end_time'/>
                             </div>
                         </div>
-                        <div className='form-group'>
-                            <label className='col-form-label' htmlFor='location'>Location</label>
-                            <input className='form-control' id='location' name='location'/>
-                        </div>
-                        <div className='form-group row'>
-                            <div className='col-sm-4'>
+                        <div className='row'>
+                            <div className='form-group col-sm-6'>
+                                <label className='col-form-label' htmlFor='location'>Location</label>
+                                <input className='form-control' id='location' name='location' placeholder='e.g. PetSmart, Reedy Creek Dog Park, etc.'/>
+                            </div>
+                            <div className='form-group col-sm-6'>
                                 <label className='col-form-label' htmlFor='address'>Address</label>
                                 <input className='form-control' id='address' name='address'/>
                             </div>
-                            <div className='col-sm-4'>
+                        </div>
+                        <div className='row'>
+                            <div className='form-group col-sm-6'>
                                 <label className='col-form-label' htmlFor='city'>City</label>
                                 <input className='form-control' id='city' name='city'/>
                             </div>
-                            <div className='col-sm-4'>
+                            <div className='form-group col-sm-6'>
                                 <label className='col-form-label' htmlFor='state'>State</label>
                                 <select className='form-select' id='state' name='state'>
                                     <option value="AL">Alabama</option>
