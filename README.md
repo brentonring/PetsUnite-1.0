@@ -63,10 +63,23 @@ You can add, edit, explore different pets to adopt, meet other pets at events, a
 ---
 
 ### :hammer_and_wrench: Languages and Tools :
+ ✨ Front-end: CSS Bootstrap, CSS unique
+ ✨ Back-end: Javascript (MVC skeleton)
+   - Packages: Express, React, NodeJS
+   - Server-side Rendering: JSX (for testing)
+   - Node Modules (to install npm i ….):
+     * express-react-views
+     * dotenv
+     * method-override
+     * mongoose
 
-
+---
 ## Database:
 - MongoDB 
+
+# What's Next?
+ - [] Future development ideas
+
 
 ## 👤 Author(s)
 
@@ -75,6 +88,8 @@ You can add, edit, explore different pets to adopt, meet other pets at events, a
 * Marisol Rodriguez: [@marisoldrodriguez](https://github.com/marisoldrodriguez)
 * Katie Eells: [@kleells](https://github.com/kleells)
 * Eric Lowe: [@ericlowe25](https://github.com/ericlowe25)
+
+
 
 
 ## 📝 License
