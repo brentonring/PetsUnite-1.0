@@ -171,9 +171,13 @@ form {
     border: 1px solid gray;
 }
 .form-group{
-    display: inline-block;
+    /* text-align: center; */
     padding: 1em;
+    /* align-items: center; */
 }
+/* .col-form-label {
+    text-align: end;
+} */
 
 /* FOOTER */
 footer{
