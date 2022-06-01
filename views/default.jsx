@@ -37,18 +37,19 @@ function Def (html) {
                               <a className="nav-link mx-3" href="/events">Events</a>
                           </li>
                       </ul>
-                      <div>
-                      <form className="form-inline mt-2 mx-2 mt-md-0 nav-btn" method="GET" action={`/login`}>
-                          <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
-                      </form>
-                      <form className="form-inline mt-2 mx-2 mt-md-0" method="GET" action={`/register`}>
-                          <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Register</button>
-                      </form>
-                      </div>
+                {/* future development - login and register pages to create personal profil page for more personalized social media app */}
+                      {/* <div>
+                        <form className="form-inline mt-2 mx-2 mt-md-0 nav-btn" method="GET" action={`/login`}>
+                            <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+                        </form>
+                        <form className="form-inline mt-2 mx-2 mt-md-0" method="GET" action={`/register`}>
+                            <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Register</button>
+                        </form>
+                      </div> */}
                   </div>
             </nav>
           </header>
-          
+
           <div className = "container">
               {html.children}
           </div>
@@ -124,10 +125,10 @@ function Def (html) {
                     <h6 className="text-uppercase fw-bold">Useful links</h6>
                       <hr className="mb-4 mt-0 d-inline-block mx-auto"/>
                         <p>
-                          <a href="http://localhost:3500/login?" className="text-dark">Login</a>
+                          <a href="/login?" className="text-dark">Login</a>
                         </p>
                         <p>
-                          <a href="http://localhost:3500/register?" className="text-dark">Register</a>
+                          <a href="/register?" className="text-dark">Register</a>
                         </p>
                   </div>
                 </div>

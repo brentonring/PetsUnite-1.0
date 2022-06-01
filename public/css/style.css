@@ -22,14 +22,13 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
 }
-
 #home-content{
     background-color: white;
     text-align: center;
     width: auto;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 2%;
+    border-radius: 20px;
 }
 #home-content h2{
     padding-top: 30px;
@@ -57,12 +56,12 @@ main {
     margin-right: 20px;
     margin-left: 20px;
     background-color: white;
-    border-radius: 2%;
+    border-radius: 20px;
 }
 /* add and edit pages */
 #main-container{
     background-color: white;
-    border-radius: 2%;
+    border-radius: 20px;
 }
 h1 {
     text-align: center;
