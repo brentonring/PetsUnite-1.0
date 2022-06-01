@@ -26,6 +26,12 @@ You can add, edit, explore different pets to adopt, meet other pets at events, a
 - Part 11: Populating data for star ratings
 - Part 12: Deploying your project
 
+---
+
+### :hammer_and_wrench: Languages and Tools :
+
+
+
 <!-- ## Routes Table -->
 
 
