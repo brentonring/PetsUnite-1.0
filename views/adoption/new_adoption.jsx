@@ -35,25 +35,6 @@ function newAdoption () {
                                     <option>Female</option>
                                 </select>
                         </div>
-                        {/* <fieldset className="form-group">
-                            <div className="row">
-                                <legend className="col-form-label pt-0">Gender</legend>
-                                <div className="col-sm-10">
-                                    <div className="form-check form-check-inline">
-                                        <input className="form-check-input" type="radio" name="gender" id="gender" value="male" />
-                                        <label className="form-check-label" for="gender">
-                                            Male
-                                        </label>
-                                    </div>
-                                    <div className="form-check form-check-inline">
-                                        <input className="form-check-input" type="radio" name="gender" id="gender" value="female" />
-                                        <label className="form-check-label" for="gender">
-                                            Female
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </fieldset> */}
                         <div className='form-group'>
                             <label className='col-form-label' htmlFor='color'>Color</label>
                             <input className='form-control' id='color' name='color'/>

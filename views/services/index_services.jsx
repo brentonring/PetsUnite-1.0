@@ -12,9 +12,6 @@ function indexServices (data) {
                         </h2>
                         <a className= "text-decoration-none" href={`/services/${service.id}`}><img className="rounded mx-auto d-block" src={service.pic} alt={service.name}></img></a>
                             <ul className='row mx-auto d-block'>
-                                {/* <li className='list-group-item text-capitalize rounded'>
-                                    <img id="icons" src="/images/icons/icon_bread32.png"></img>{service.name}
-                                </li> */}
                                 <li className='list-group-item text-capitalize rounded'>
                                     <img id="icons" src="/images/icons/icon_bread32.png"></img>{service.breed}
                                 </li>

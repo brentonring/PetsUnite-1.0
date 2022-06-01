@@ -22,23 +22,11 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
 }
-/* #intro {
-    background-image: url("/images/krista-mangulsone-9gz3wfHr65U-unsplash.jpg");
-    height: 100vh;
-  }
-@media (min-width: 992px) {
-    #intro {
-        margin-top: -58.59px;
-    }
-}
-.mask{
-    background-color: rgba(0, 0, 0, 0.8);
-} */
 
 #home-content{
     background-color: white;
     text-align: center;
-    width: 700px;
+    width: auto;
     margin-left: auto;
     margin-right: auto;
     border-radius: 2%;
@@ -60,15 +48,6 @@ nav ul{
     height: auto;
     margin-left: 10px;
 }
-/* nav li{
-    justify-content: center;
-} */
-/* #nav-buttons{
-    float: right;
-}
-#nav-button{
-    float: right;
-} */
 .form-inline button{
     text-align: right;
 }
@@ -78,8 +57,9 @@ main {
     margin-right: 20px;
     margin-left: 20px;
     background-color: white;
-    /* border-radius: 2%; */
+    border-radius: 2%;
 }
+/* add and edit pages */
 #main-container{
     background-color: white;
     border-radius: 2%;
@@ -87,9 +67,6 @@ main {
 h1 {
     text-align: center;
     color: var(--palette-brown);
-    /* background-color: var(--palette-light-teal);
-    width: 40%;
-    margin: auto; */
     margin-top: 25px;
     margin-bottom: 25px;
     font-size: 60px;
