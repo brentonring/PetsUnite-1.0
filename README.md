@@ -26,7 +26,7 @@ You can add, edit, explore different pets to adopt, meet other pets at events, a
 - Part 11: Populating data for star ratings
 - Part 12: Deploying your project
 
-## Routes Table
+<!-- ## Routes Table -->
 
 
 
@@ -48,13 +48,6 @@ You can add, edit, explore different pets to adopt, meet other pets at events, a
 
 ### Places
 
-<!-- | Field    | Input     | Type    |
-| -------- | --------- | ------- |
-| Name     | `name`    | String  |
-| City     | `city`    | String  |
-| State    | `state`   | String  |
-| Cuisines | `cuisines`| Strings |
-| Pictures | `pictures`| Strings | -->
 
 ## License
 MIT License
