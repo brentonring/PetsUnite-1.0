@@ -1,6 +1,5 @@
 const db = require('../models');
 
-//Katie--> include bio for each
 db.Adoption.create([
     {
       animal_type: "dog",

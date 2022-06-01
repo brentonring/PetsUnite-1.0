@@ -1,6 +1,5 @@
 const db = require('../models');
 
-//Katie--> include event description for each
 db.Event.create([
   {
     event_name: "Fun Doggie Play Date",
