@@ -1,7 +1,5 @@
 const db = require('../models');
 
-//Katie-->include event description for each
-//add age_unit to each
 db.Service.create([
     {
       service: "feeding",
@@ -9,8 +7,8 @@ db.Service.create([
       breed: "Corn Snake",
       gender: "male",
       name: "Draco",
-      age: 3 , //number
-      age_unit: "years", //string
+      age: 3 ,
+      age_unit: "years",
       health_history: "none",
       details: "I'm looking for someone willing to stop in and feed my pet Draco. I will be out of town for 2 weeks and need him to be given a meal only once. WARNING: This involves feeding him a thawed, dead mouse.",
       pic: "https://cdn.pixabay.com/photo/2018/03/19/01/13/corn-snake-3238782_960_720.jpg"
