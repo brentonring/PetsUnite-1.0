@@ -2,18 +2,16 @@
 Hello this is a social media project about pets!
 You can add, edit, explore different pets to adopt, meet other pets at events, and connect to services for your precious pets. 
 
-## Essential Page Breakdown
-1. Homepage
-2. Reviews.
-3. Input Pets name and review.
+## ✨ Requirements
+* Any Operating System (ie. MacOS X, Linux, Windows)
+* VSCode etc
+* MongoDB Compass
 
-## User Stories
-
-- As a Customer I need a way to navigate through website so I can explore.
-- 
-
-# roadmap for PetsUnite
-- Part 1: Project setup, stub three routes, and creating a README file
+# Project Plan
+- Part 1: Overall idea
+          * Pet rescue/adopt- post/edit/delete available relocate pets
+             * 
+          
 - Part 2: Stub remaining GET and POST routes, planning mock animal data, drawing wireframes, and making your first view
 - Part 3: Making more views, creating a layout page, and expanding your README
 - Part 4: Adding some style with CSS
@@ -31,31 +29,19 @@ You can add, edit, explore different pets to adopt, meet other pets at events, a
 ### :hammer_and_wrench: Languages and Tools :
 
 
+## Database:
+- MongoDB 
 
-<!-- ## Routes Table -->
+## 👤 Author(s)
 
-
-
-<!-- | Method | Path                     | Purpose                                          |
-| ------ | ------------------------ | ------------------------------------------------ |
-| GET    | /                        | Home Page                                        |
-| GET    | /places                  | Places Index Page                                |
-| POST   | /places                  | Create new place                                 |
-| GET    | /places/new              | Form page for creating a new place               |
-| GET    | /places/:id              | Details about a particular place                 |
-| PUT    | /places/:id              | Update a particular place                        |
-| GET    | /places/:id/edit         | Form page for editing an existing place          |
-| DELETE | /places/:id              | Delete a particular place                        |
-| POST   | /places/:id/rant         | Create a rant (comment) about a particular place |
-| DELETE | /places/:id/rant/:rantld | Delete a rant (comment) about a particular place |
-| GET    | \*                       | 404 page (matches any route not defined above)   | -->
-
-## Data to store 'places'
-
-### Places
+* Allisa Makligh: [@alissamak](https://github.com/alissamak)
+* Brenton Ring: [@brentonring](https://github.com/brentonring)
+* Marisol Rodriguez: [@marisoldrodriguez](https://github.com/marisoldrodriguez)
+* Katie Eells: [@kleells](https://github.com/kleells)
+* Eric Lowe: [@ericlowe25](https://github.com/ericlowe25)
 
 
-## License
+## 📝 License
 MIT License
 
 Copyright (c) 2022 brentonring
