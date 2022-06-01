@@ -21,7 +21,6 @@ body{
     background-color: #4C8077;
     background-repeat: no-repeat;
     background-size: 100%;
-    opacity: 0.86;
 }
 /* #intro {
     background-image: url("/images/krista-mangulsone-9gz3wfHr65U-unsplash.jpg");
@@ -35,19 +34,11 @@ body{
 .mask{
     background-color: rgba(0, 0, 0, 0.8);
 } */
-/* #home-main{
-    height: 100vh;
-    width: 100%;
-    background-image: url("/images/krista-mangulsone-9gz3wfHr65U-unsplash.jpg");
-    background-color: #4C8077;
-    background-repeat: no-repeat;
-    background-size: 100%;
-} */
 
 #home-content{
     background-color: white;
     text-align: center;
-    width: 500px;
+    width: 700px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 2%;
@@ -57,6 +48,7 @@ body{
 }
 #home-content p{
     padding: 30px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* NAV BAR */
@@ -85,8 +77,8 @@ nav ul{
 main {
     margin-right: 20px;
     margin-left: 20px;
-    /* background-color: white;
-    border-radius: 2%; */
+    background-color: white;
+    /* border-radius: 2%; */
 }
 #main-container{
     background-color: white;
@@ -104,7 +96,6 @@ h1 {
     font-weight: lighter;
     letter-spacing: 3px;
     font-family: 'Lobster Two', cursive;
-    
 }
 h2 {
     color: var(--palette-teal);
@@ -120,9 +111,8 @@ p{
     color: var(--text-color);
 }
 
-/* CARD CONTENT */
+/* INDEX CARD CONTENT */
 img{
-    /* width: 80%; */
     width: 100%;
     height: auto;  
 }
@@ -132,7 +122,6 @@ img{
 }
 #card:hover{
     background-color: var(--palette-light-teal);
-    /* transform: scale(1.1); */
 }
 #card-content{
     padding-bottom: 0px;
@@ -150,16 +139,11 @@ img{
 .btn-primary{
     margin-top: 20px;
     margin-bottom: 20px;
-    /* background-color: var(--palette-dark-green);
-    border-color: var(--palette-dark-green); */
     background-color: var(--palette-light-teal);
     border-color: var(--palette-light-teal);
     color: var(--palette-dark-green);
 }
 .btn-primary:hover{
-    /* background-color: var(--palette-light-teal);
-    border-color: var(--palette-dark-green);
-    color: var(--palette-dark-green); */
     background-color: var(--palette-dark-green);
     border-color: var(--palette-dark-green);
 }
@@ -187,14 +171,18 @@ form {
     border: 1px solid gray;
 }
 .form-group{
-    display: inline-block;
+    /* text-align: center; */
     padding: 1em;
+    /* align-items: center; */
 }
+/* .col-form-label {
+    text-align: end;
+} */
 
 /* FOOTER */
 footer{
-    margin-top: 300px;
-    background-color: #f1f1f1;
+    margin-top: 100px;
+    background-color: white;
 }
 #copyright{
     background-color:rgba(0, 0, 0, 0.2);
@@ -208,4 +196,34 @@ footer a:hover{
     color: var(--palette-brown);
     margin: 20px;
     font-size: 13px;
+}
+
+/* Katie FOOTER */
+footer hr{
+    width: 70px;
+    background-color: #00C9AC;
+    margin-top: 20px
+}
+
+.copyright {
+    background-color: white;
+    font-size: 12px;
+}
+
+.text-dark {
+    text-decoration: none;
+}
+
+h6 {
+    margin-top: 40px;
+}
+
+footer section {
+    font-family: 'Montserrat', sans-serif;
+    color: #483425;
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    color: #212529;
 }

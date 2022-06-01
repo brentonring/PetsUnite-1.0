@@ -1,6 +1,6 @@
 const db = require('../models');
 
-async function seed() {
+async function seedAdoptComment() {
     try {
         let pet = await db.Adoption.findOne({ name: 'Lucille' })
     
@@ -8,7 +8,6 @@ async function seed() {
         let comment = await db.Comment.create({
             author: 'Chatty Patty',
             adopt: false,
-            stars: 5.0,
             content: "Wow, what a beautiful dog! We are interested in adopting!"
         })
 
@@ -20,10 +19,11 @@ async function seed() {
 
         // exit the program
         process.exit()
-    } catch(err) {
+    } 
+    catch(err) {
         console.log(err)
     }
 
 };
 
-seed()
+seedAdoptComment();
