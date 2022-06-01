@@ -8,7 +8,7 @@ You can add, edit, explore different pets to adopt, meet other pets at events, a
 * MongoDB Compass
 
 # Project Plan
-- Overall idea
+- ✨ Overall idea
      * Pet rescue/adopt- post/edit/delete available relocate pets
          * Limite the focus to 5-10 animal types
             * 6 animals: Dog, cat, bird, rodent, reptiles, fish
@@ -20,19 +20,9 @@ You can add, edit, explore different pets to adopt, meet other pets at events, a
             * Collection/page 3- events (classes, meet-ups, adoption events)
          * Data: first name, last name, email/username, password
             * Collection/page 4- profiles (username, passwords)
- 
-          
-- Part 2: Stub remaining GET and POST routes, planning mock animal data, drawing wireframes, and making your first view
-- Part 3: Making more views, creating a layout page, and expanding your README
-- Part 4: Adding some style with CSS
-- Part 5: Forms, validation, and navigation
-- Part 6: Implementing delete functionality and adding a DELETE route
-- Part 7: Implementing edit form and functionality, adding a PUT route
-- Part 8: Implementing the Mongoose ODM
-- Part 9: Seed data, validations, and helper methods
-- Part 10: Adding commentary: rants and raves
-- Part 11: Populating data for star ratings
-- Part 12: Deploying your project
+ - ✨ Name: PetsUnite
+ - ✨ Model:
+
 
 ---
 
