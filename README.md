@@ -77,8 +77,17 @@ You can add, edit, explore different pets to adopt, meet other pets at events, a
 ## Database:
 - MongoDB 
 
-# What's Next?
- - [] Future development ideas
+## ✨ Future Tasks✨
+ - Connecting to cloud database to show data without doing node seeders/whatever file every time
+ - Function for like button to count
+ - Function for comments button to count
+ - Filter tool for show pages
+ - Create login page and authentication
+ - Create personal profile page
+ - Create register page
+ - Connecting user profiles to list their additions
+ - Add Star button to favorite data elements and save starred items to profile
+
 
 
 ## 👤 Author(s)
