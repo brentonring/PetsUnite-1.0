@@ -8,9 +8,19 @@ You can add, edit, explore different pets to adopt, meet other pets at events, a
 * MongoDB Compass
 
 # Project Plan
-- Part 1: Overall idea
-          * Pet rescue/adopt- post/edit/delete available relocate pets
-             * 
+- Overall idea
+     * Pet rescue/adopt- post/edit/delete available relocate pets
+         * Limite the focus to 5-10 animal types
+            * 6 animals: Dog, cat, bird, rodent, reptiles, fish
+         * Data: animal type, breed, gender, name, age, health history, pic url
+            * Collection/page 1- adoption
+         * Data: service, animal type, breed, gender, name, age, health history, pic url
+            * Collection/page 2- services (walking, pet sitting, grooming)
+         * Data: event name, date, time, location, pic url
+            * Collection/page 3- events (classes, meet-ups, adoption events)
+         * Data: first name, last name, email/username, password
+            * Collection/page 4- profiles (username, passwords)
+ 
           
 - Part 2: Stub remaining GET and POST routes, planning mock animal data, drawing wireframes, and making your first view
 - Part 3: Making more views, creating a layout page, and expanding your README
