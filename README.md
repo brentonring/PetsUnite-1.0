@@ -22,6 +22,36 @@ You can add, edit, explore different pets to adopt, meet other pets at events, a
             * Collection/page 4- profiles (username, passwords)
  - ✨ Name: PetsUnite
  - ✨ Model:
+    * (https://beautifultogethersanctuary.com/available-cats/?gclid=Cj0KCQjwyYKUBhDJARIsAMj9lkGVL4yQ4YWCKbrOpLFicM8EJzeVexBc4lktxWp016mjtaEw5iUCaKYaAqeEEALw_wcBv)
+Design/look?
+Home page- welcome page/about
+Navbar (7 main pages, 1 default page, 3 add, 3 edit, 3 show pages)
+Register page
+Use of the website checkboxes (adoption, services, events)
+Login page
+Home page
+Adoption page
+Add a pet button
+Edit a pet button
+Delete a pet button
+Like Button
+Services page
+Add a service button
+Edit a service button
+Delete a service button
+Like button
+Comment button
+Events page
+Add an event button
+Edit an event button
+Delete an event button
+Going/interested buttons (Facebookesque)
+Comments
+Error page *
+Colors?
+Images?
+Font?
+API?
 
 
 ---
