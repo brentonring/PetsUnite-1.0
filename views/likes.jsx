@@ -1,3 +1,4 @@
+// future development - like button function using React
 const React = require('react');
 const ReactDOM = require('react-dom');
 //function equivalent

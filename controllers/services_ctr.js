@@ -78,7 +78,7 @@ router.put('/:id', (req, res) =>{
       })
 })
 
-//post comment to service
+//POST comment to service
 router.post('/:id/comment', (req, res) => {
   console.log('post comment', req.body)
   if (req.body.author === '') { req.body.author = undefined }
