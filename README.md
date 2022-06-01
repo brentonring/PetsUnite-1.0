@@ -63,8 +63,8 @@ You can add, edit, explore different pets to adopt, meet other pets at events, a
 ---
 
 ### :hammer_and_wrench: Languages and Tools :
- ✨ Front-end: CSS Bootstrap, CSS unique
- ✨ Back-end: Javascript (MVC skeleton)
+ - ✨ Front-end: CSS Bootstrap, CSS unique
+ - ✨ Back-end: Javascript (MVC skeleton)
    - Packages: Express, React, NodeJS
    - Server-side Rendering: JSX (for testing)
    - Node Modules (to install npm i ….):
