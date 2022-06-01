@@ -92,7 +92,7 @@ You can add, edit, explore different pets to adopt, meet other pets at events, a
 
 ## 👤 Author(s)
 
-* Allisa Makligh: [@alissamak](https://github.com/alissamak)
+* Alissa Makligh: [@alissamak](https://github.com/alissamak)
 * Brenton Ring: [@brentonring](https://github.com/brentonring)
 * Marisol Rodriguez: [@marisoldrodriguez](https://github.com/marisoldrodriguez)
 * Katie Eells: [@kleells](https://github.com/kleells)
