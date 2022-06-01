@@ -1,29 +1,29 @@
 const db = require('../models');
 
-async function seed() {
+async function seedServiceComment() {
     try {
-        let event = await db.Event.findOne({ event_name: 'Doggie Play Date' })
+        let service = await db.Service.findOne({ service: 'feeding' })
     
         // fake sample comment
-        let comment = await db.Eventcomment.create({
-            author: 'Chatty Patty',
+        let comment = await db.Servicecomment.create({
+            author: 'Lazy Daisy',
             event: false,
-            stars: 5.0,
             content: "Count me in!"
         })
 
         // add comment to the events comment array
-        event.comments.push(comment.id)
+        service.comments.push(comment.id)
 
         // save the event now that it has a comment
-        await event.save()
+        await service.save()
 
         // exit the program
         process.exit()
-    } catch(err) {
+    } 
+    catch(err) {
         console.log(err)
     }
 
 };
 
-seed()
+seedServiceComment();

@@ -59,8 +59,8 @@ router.get('/:id', (req, res) => {
 //GET edit service
 router.get('/:id/edit', (req, res) => {
     db.Service.findById(req.params.id)
-      .then(services => {
-        res.render('services/edit_services', {services})
+      .then(service => {
+        res.render('services/edit_services', {service})
       })
       .catch(err => {
         res.render('error404')
@@ -78,10 +78,49 @@ router.put('/:id', (req, res) =>{
       })
 })
 
+//post comment to service
+router.post('/:id/comment', (req, res) => {
+  console.log('post comment', req.body)
+  if (req.body.author === '') { req.body.author = undefined }
+    req.body.service = req.body.service ? true : false
+    db.Service.findById(req.params.id)
+        .then(services => {
+            db.ServiceComment.create(req.body)
+                .then(comment => {
+                    services.comments.push(comment.id)
+                    services.save()
+                        .then(() => {
+                            res.redirect(`/services/${req.params.id}`)
+                        })
+                        .catch(err => {
+                            res.render('error404')
+                        })
+                })
+                .catch(err => {
+                    res.render('error404')
+                })
+        })
+        .catch(err => {
+            res.render('error404')
+        })
+})
+
 //DELETE service
 router.delete('/:id', async (req, res) => {
   let deletedService = await db.Service.findByIdAndDelete(req.params.id)
   res.status(303).redirect('/services')
+})
+
+//DELETE comment from pet adoption
+router.delete('/:id/comment/:commentId', (req, res) => {
+  db.ServiceComment.findByIdAndDelete(req.params.commentId)
+        .then(() => {
+            console.log('Success')
+            res.redirect(`/services/${req.params.id}`)
+        })
+        .catch(err => {
+            res.render('error404')
+        })
 })
 
 module.exports = router;

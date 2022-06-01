@@ -4,7 +4,8 @@ const Def = require('../default')
 function newService () {
     return (
         <Def>
-            <main>
+            <main id="main-container">
+            <h1 style={{textAlign: 'center'}}>Unite Pet Lovers with Your Pet Service</h1>
                 <form method='POST' action='/services'>
                     <div className='form-group col-sm-6'>
                         <label htmlFor='service'>Service</label>
@@ -19,6 +20,7 @@ function newService () {
                             <option>Rodent</option>
                             <option>Reptiles</option>
                             <option>Fish</option>
+                            <option>Other</option>
                         </select>
                     </div>
                     <div className='form-group col-sm-3'>

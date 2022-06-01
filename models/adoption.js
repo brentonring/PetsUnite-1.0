@@ -14,7 +14,7 @@ const adoptionSchema = new mongoose.Schema({
     pic: {type: String, default: 'https://cdn.pixabay.com/photo/2014/12/17/05/22/dog-571125__340.jpg'},
     comments: [{ 
         type: mongoose.Schema.Types.ObjectId, 
-        ref: 'Comment' 
+        ref: 'AdoptComment' 
     }],
 });
 
