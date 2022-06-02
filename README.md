@@ -2,61 +2,106 @@
 Hello this is a social media project about pets!
 You can add, edit, explore different pets to adopt, meet other pets at events, and connect to services for your precious pets. 
 
-## Essential Page Breakdown
-1. Homepage
-2. Reviews.
-3. Input Pets name and review.
+## ✨ Requirements
+* Any Operating System (ie. MacOS X, Linux, Windows)
+* VSCode etc
+* MongoDB Compass
 
-## User Stories
+# Project Plan
+- ✨ Overall idea
+     * Pet rescue/adopt- post/edit/delete available relocate pets
+         * Limite the focus to 5-10 animal types
+            * 6 animals: Dog, cat, bird, rodent, reptiles, fish
+         * Data: animal type, breed, gender, name, age, health history, pic url
+            * Collection/page 1- adoption
+         * Data: service, animal type, breed, gender, name, age, health history, pic url
+            * Collection/page 2- services (walking, pet sitting, grooming)
+         * Data: event name, date, time, location, pic url
+            * Collection/page 3- events (classes, meet-ups, adoption events)
+         * Data: first name, last name, email/username, password
+            * Collection/page 4- profiles (username, passwords)
+- ✨ Name: PetsUnite
+- ✨ Model:
+     * (https://beautifultogethersanctuary.com/available-cats/?gclid=Cj0KCQjwyYKUBhDJARIsAMj9lkGVL4yQ4YWCKbrOpLFicM8EJzeVexBc4lktxWp016mjtaEw5iUCaKYaAqeEEALw_wcBv)
 
-- As a Customer I need a way to navigate through website so I can explore.
-- 
+- ✨ Design/look?
+     * Home page- welcome page/about
+     * Navbar (7 main pages, 1 default page, 3 add, 3 edit, 3 show pages)
+        * Register page
+            * Use of the website checkboxes (adoption, services, events)
+        * Login page
+        * Home page
+        * Adoption page
+            * Add a pet button
+            * Edit a pet button
+            * Delete a pet button
+            * Like Button
+        * Services page
+            * Add a service button
+            * Edit a service button
+            * Delete a service button
+            * Like button
+            * Comment button
+        * Events page
+            * Add an event button 
+            * Edit an event button
+            * Delete an event button
+            * Going/interested buttons (Facebookesque)
+            * Comments
+        * Error page *
+     * Colors?
+     * Images?
+     * Font?
+- ✨ API?
+---
+## Project Wireframe/Structure:
+ - Example Sources:
+   * (https://www.behance.net/gallery/86774437/FreeWire-Free-Wireframe-Kit-For-Adobe-XD)
+   * (https://www.justinmind.com/wireframe/inspiring-web-and-mobile-wireframe-and-prototype-examples)
 
-# roadmap for PetsUnite
-- Part 1: Project setup, stub three routes, and creating a README file
-- Part 2: Stub remaining GET and POST routes, planning mock animal data, drawing wireframes, and making your first view
-- Part 3: Making more views, creating a layout page, and expanding your README
-- Part 4: Adding some style with CSS
-- Part 5: Forms, validation, and navigation
-- Part 6: Implementing delete functionality and adding a DELETE route
-- Part 7: Implementing edit form and functionality, adding a PUT route
-- Part 8: Implementing the Mongoose ODM
-- Part 9: Seed data, validations, and helper methods
-- Part 10: Adding commentary: rants and raves
-- Part 11: Populating data for star ratings
-- Part 12: Deploying your project
 
-## Routes Table
+---
+
+### :hammer_and_wrench: Languages and Tools :
+ - ✨ Front-end: CSS Bootstrap, CSS unique
+ - ✨ Back-end: Javascript (MVC skeleton)
+   - Packages: Express, React, NodeJS
+   - Server-side Rendering: JSX (for testing)
+   - Node Modules (to install npm i ….):
+     * express-react-views
+     * dotenv
+     * method-override
+     * mongoose
+
+---
+## Database:
+- MongoDB 
+
+## ✨ Future Tasks✨
+ - Connecting to cloud database to show data without doing node seeders/whatever file every time
+ - Function for like button to count
+ - Function for comments button to count
+ - Filter tool for show pages
+ - Create login page and authentication
+ - Create personal profile page
+ - Create register page
+ - Connecting user profiles to list their additions
+ - Add Star button to favorite data elements and save starred items to profile
 
 
 
-<!-- | Method | Path                     | Purpose                                          |
-| ------ | ------------------------ | ------------------------------------------------ |
-| GET    | /                        | Home Page                                        |
-| GET    | /places                  | Places Index Page                                |
-| POST   | /places                  | Create new place                                 |
-| GET    | /places/new              | Form page for creating a new place               |
-| GET    | /places/:id              | Details about a particular place                 |
-| PUT    | /places/:id              | Update a particular place                        |
-| GET    | /places/:id/edit         | Form page for editing an existing place          |
-| DELETE | /places/:id              | Delete a particular place                        |
-| POST   | /places/:id/rant         | Create a rant (comment) about a particular place |
-| DELETE | /places/:id/rant/:rantld | Delete a rant (comment) about a particular place |
-| GET    | \*                       | 404 page (matches any route not defined above)   | -->
+## 👤 Author(s)
 
-## Data to store 'places'
+* Alissa Makligh: [@alissamak](https://github.com/alissamak)
+* Brenton Ring: [@brentonring](https://github.com/brentonring)
+* Marisol Rodriguez: [@marisoldrodriguez](https://github.com/marisoldrodriguez)
+* Katie Eells: [@kleells](https://github.com/kleells)
+* Eric Lowe: [@ericlowe25](https://github.com/ericlowe25)
 
-### Places
 
-<!-- | Field    | Input     | Type    |
-| -------- | --------- | ------- |
-| Name     | `name`    | String  |
-| City     | `city`    | String  |
-| State    | `state`   | String  |
-| Cuisines | `cuisines`| Strings |
-| Pictures | `pictures`| Strings | -->
 
-## License
+
+## 📝 License
 MIT License
 
 Copyright (c) 2022 brentonring
