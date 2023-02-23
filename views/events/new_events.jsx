@@ -15,17 +15,17 @@ function newEvent () {
                             </div>
                             <div className='form-group col-sm-6'>
                                 <label className='col-form-label' htmlFor='date'>Date</label>
-                                <input className='form-control' id='date' name='date' placeholder='mm/dd/yyyy'/>
+                                <input className='form-control' type='date' id='date' name='date' />
                             </div>
                         </div>
                         <div className='row'>
                             <div className='form-group col-sm-6'>
                                 <label className='col-form-label' htmlFor='start_time'>Start Time</label>
-                                <input className='form-control' id='start_time' name='start_time'/>
+                                <input className='form-control' type='time' id='start_time' name='start_time'/>
                             </div>
                             <div className='form-group col-sm-6'>
                                 <label className='col-form-label' htmlFor='end_time'>End Time</label>
-                                <input className='form-control' id='end_time' name='end_time'/>
+                                <input className='form-control' type='time' id='end_time' name='end_time'/>
                             </div>
                         </div>
                         <div className='row'>
